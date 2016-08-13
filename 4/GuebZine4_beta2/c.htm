@@ -1,0 +1,436 @@
+<html>
+<title>Curso de C</title>
+<body background="img/bg/c.jpg">
+<style>A{text-decoration:underline; color:#DD0103}A:hover{font-weight:2; color:#00cc33; text-decoration:none}</style>
+<bgsound src="midi/c.mid">
+<center>
+<img src="img/logos/programa/c.gif" alt="Curso de C">
+<br>
+<table bgcolor="#435332" border=1 bordercolor="439911" width="35%">
+<tr>
+<td>
+Otros cursos:<br><center>
+<b><a href="soft/c.zip">Curso de C</a><br>
+<a href="soft/c-chip.zip">Programacion en C by CHIP</a></b>
+</center>
+</td>
+</tr>
+</table>
+</center>
+<br>
+<br>
+<font size=3>
+<font color="#ffffff">
+Aqui es donde verdaderamente comienza el Curso de C. Ya se han acabado las lecciones basicas
+sobre este. Ahora comenzaremos con algo tambien basico, pero introduciendo algo mas de practica.
+<br>
+<br>
+Apartir de este capitulo muchos de vosotros os comenzareis a dar cuenta de que estais aprendiendo
+algo mas complicado de lo que al principio creiais. Otros, encambio, os puede llegar a parecer
+sencillo. 
+<br>
+El C es sencillo hasta llegar a un punto. Estas lecciones basicas que se dan en este numero son
+sencillas para todos; lo mas complicado es acostumbrarse a la sintaxis del C. Esto no es problema
+para los que ya sepan algo de Java, JavaScript e incluso para los que hayan realizado scripts
+para el mIRC, etc. Todo es acostumbrarse. Y una vez superado esto no es mas que recordar los
+distintos comandos y ponerse manos a la obra (:
+<br>
+<br>
+Os deseo suerte y espero que vayais 'empollando' todo lo que en este numero se enseña, pues de
+aqui a que llegue el proximo teneis tiempo (;
+<br>
+<br>
+
+<center>
+<table background="img/bg/c2.jpg" width="52%">
+<tr>
+ <td>
+<center><img src="img/br/c.gif"></center>
+ </td>
+</tr>
+
+
+<tr>
+<td>
+<font color="#ffffff">
+<br>
+Para los que sepais programar en Visual Basic tambien os puede ser algo mas sencillo comprender
+la estructura de un programa en C.
+<br>
+<br>
+Un programa escrito en C se compone de diversas partes principales: <i>llamada a las librerias</i>,
+<i>declaracion de variables</i> y <i>funcion MAIN()</i>.
+<br>
+<br>
+La <b>llamada a las librerias</b> puede resultar algo incomprensible para muchos programadores
+acostumbrados al <i>alto nivel</i>. Simplemente, se trata de llamar a unas librerias que son las
+que contienen los comandos que se van a utilizar. Cada una de ellas ocupa memoria, por lo que se
+recomienda solo cargar las necesarias. Para que el Turbo C reconozca los comandos, este los busca
+en las librerias; si en las librerias no aparecen, los comandos seran inutiles y el programa
+tambien lo sera. Las librerias mas conocidas y principales son <b>conio.h</b> y <b>stdio.h</b>.
+Pero hay que tener en cuenta que existen muchas mas para muchas finalidades diversas. Cada
+version del Turbo C puede llegar a tener mas de una nueva y gente particular se puede dedicar
+a crearlas. Hay gente que le puede llegar a recordar a los objetos OLE: pero nada que ver. El
+lugar donde se llaman es siempre fuera y antes que la <b>funcion MAIN()</b>.
+<br>
+<br>
+La <b>declaracion de variables</b> no es nada mas lejos que lo mismo que se realiza en Visual
+Basic, por ejemplo. Las variables, antes de ser utilizadas, han de ser declaradas. Si una
+variable es declarada dentro de una <i>funcion</i>, esta solo podra ser utilizada dentro de esta
+si no se le indica lo contrario. Lo mas normal, para utilizar una variable en todo el programa
+entero dentro de cualquier funcion etc., es declararla fuera y antes de la funcion <i>MAIN()</i>.
+<br>
+<br>
+La <b>funcion MAIN()</b> es la funcion principal de un programa. Esta es la que se ejecuta al
+iniciar el programa y es <b>imprescindible</b>.
+<br>
+Una <b>funcion</b> no es mas que una especie de SUBRUTINA (en QBasic, sin ir mas lejos). Esto no
+es del todo cierto, pero sirve para darse una idea. En una <b>funcion</b> se recogen dentro
+algunas declaraciones de variables (si se desea) y los comandos correspondientes (si se desea
+hacer algo). Una <b>funcion</b> puede ser llamada y entrar en ella cuando se desee; ejecutando
+asi los comandos de esta en el momento que el programador quiera. Es muy util para esquematizar
+un programa y estrucutarlo bien para ser entendido facilmente.
+</td>
+</tr>
+
+<tr>
+ <td>
+<br>
+<center><img src="img/br/c2.gif"></center>
+ </td>
+</tr>
+</table>
+
+<br>
+
+<table background="img/bg/c3.jpg" width="52%">
+<tr>
+ <td>
+<center><img src="img/br/c.gif"></center>
+ </td>
+</tr>
+<tr>
+ <td>
+<font color="#ffff00">
+<br>
+El <b>ESTILO</b> de un programa en C ha de ser lo mas estructurado posible. Con ello
+conseguiremos que sea mas facil de entender para nosotros a la hora de revisar el codigo o para
+la persona que lo lea.
+<br>
+Es <b>esencial</b> no utilizar muchos comandos inecesarios si tenemos la posibilidad de
+compactarlo todo en menos comandos. Entre menos lineas de codigo, sin alterar la mision del
+programa, mas compacto y legible sera; ocupara menos memoria y sera mas rapido de leer para
+nosotros. Esto marcara la diferencia entre un programa directo y bien programado o un programa
+chapucero.
+<br>
+<br>
+Esta muy bien adaptar un <b>estilo de estructuracion</b> para hacer mas legible a nivel humano.
+Es ideal separar por mas de una linea dos <b>funciones</b>, por mas de dos la <b>declaracion de
+librerias</b> y las <b>declaraciones de variables</b> fuera de las <b>funciones</b> (por dos las
+que esten dentro de una <b>funcion</b>).
+<br>
+Tambien es recomendable separar los comandos por una linea cuando son directos y sencillos y por
+dos cuando se trata de comandos mas dificiles o, simplemente, que tengan poco que ver: esto
+es la separacion segun la importancia, sencillez u objetivo de los mismos.
+<br>
+Cuando se llega a un bucle, un if, switch o cualquier otro comando que pueda ser estrucutrado en
+diversas lineas (desplegado), se recomienda "abrirlo" y contener todos sus comandos ordenados linea bajo
+linea en vez de poner todo el comando en una sola (siempre y cuando sea mas facil de entender
+asi su funcionamiento que en una sola linea). Las tareas para imprimir texto en pantalla,
+borrar pantalla, etc. suelen irc muy juntos y hasta en la misma linea. Ordena tambien con los
+tabuladores, acuerdate de esto.<font color="#ff0000">
+<br>
+<h5>
+
+Ejemplo desordenado:
+<br>
+<tt>
+<font color="#00ff00">if(a==3){clrscr();printf("\nHola\a");getch();exit(0);} 
+<br>
+</tt>
+<font color="#ff0000">Ejemplo ordenado:
+<br>
+<tt>
+<font color="#00ff00">if(a==3) {
+<br>
+clrscr();
+<br>
+printf("\nHola\a");
+<br>
+getch();
+<br>
+exit(0);
+<br>
+} 
+</tt>
+</h5>
+<center><img src="img/br/c2.gif"></center>
+ </td>
+</tr>
+</table>
+
+
+<br>
+
+
+<table background="img/bg/c4.jpg" width="52%">
+<tr>
+ <td>
+<center><img src="img/br/c.gif"></center>
+ </td>
+</tr>
+<tr>
+ <td>
+
+<font color="#00ccff">
+<br>
+El Turbo C es sensible a las mayusculas y minusculas. Es conveniente escribir todos los comandos
+en minusculas. Si no lo hacemos asi, nos dara error. Asi que antes de programar ceriorate de no
+tener activada la tecla "Bloquear Mayusculas" y conscienciate de esto firmemente: no vaya a ser
+que tengas que cambiar buena parte por el hecho de escribir en mayusculas o no sepas por que te
+da error.
+<br>
+<br>
+Haz caso al apartado anterior y ordena el programa a la perfeccion: optimiza tu codigo. Es muy
+util (escencial) a la hora de detectar un fallo y entender el codigo para modificarlo, etc.
+Muchas veces dara error el programa o habra un pequeño "bug" y no seras capaz de encontrarlo con
+facilidad ya que no entenderas a la perfeccion tu propio codigo y te veras con dificultad para
+"navegar" en el.
+<br>
+<br>
+Acuerdate de la memoria. No cargues mas variables de las necesarias y tampoco derroches en
+librerias (escatima mucho con esto). Tampoco te pongas a escribir muchos comandos. Muchas veces
+existen "escapes" para no utilizarlos todos sin cambiar el funcionamiento del programa o existen
+otros comandos que hacen lo mismo o mas en menos espacio.
+<br>
+Te resultara obvio, pero no es tan sencillo. Muchos escriben, por ejemplo, dos <b>clrscr();</b>
+entra una linea que no escribe nada en pantalla y, por lo tanto, con uno basta. Esto es un
+pequeño ejemplo, pero es muy frecuente y es para dar una idea.
+<br>
+<br>
+Cierra los comandos. Los acostumbrados al javascript o html, por ejemplo, estan acostumbrados
+a ello. En este caso, los comandos se cierran con ";" (clrscr()<b>;</b>). Muchas veces dara error
+y no sabras por que.
+<br>
+<br>
+Si te da error, fijate de no haber escrito la declaracion de librerias dentro de alguna funcion
+o de haber puesto comandos antes que la declaracion de una o mas variables.
+<br>
+Tambien fijate de no haber escrito mal los nombres de los comandos, de estar utilizando variables
+declaradas para todas las funciones o para la que estas trabajando, de utilizar comandos que
+figuran en las librerias cargadas en memoria...
+<br>
+<br>
+Has de entender a la perfeccion cada linea de tu programa: su forma de actuar, su sintaxis, sus
+contras y pros, etc. 
+<br>
+<br>
+Muchos programas suelen fallar cuando a una variable INTEGER (int) no se le otorga un valor
+inicial al ser declarada (o al menos, antes de ser utilizada). Cuando declaramos este tipo de
+variables, estas acogen el valor que sea de la memoria. Ojo con esto, pues para los contadores,
+etc. en los que el usuario no da valor a la variable, etc. el programa no suele funcionar
+correctamente.
+<br>
+Tambien ojo con las variables de cadena de texto (char) a las que se le ha de dar una extension
+maxima de caracteres. Esto ocupa memoria, por lo que si sabes seguro lo que ocupa en caracteres,
+pon el numero exacto. Si no estas seguro, pon un valor ligeramente mayor del que creas que ocupa.
+Solo asi evitaras que no quepa en la variable un texto y, con ello, futuros errores en el
+programa.
+<br>
+<br>
+Recuerda que el buen programador no es aquel que se sabe a la perfeccion todos los comandos y el
+lenguaje en el que trabaja, sino el que se estructura todo, tiene un estilo bueno para programar
+y realiza bien su tarea. Para ser mejor programador, debes tener estas dos cosas bien claras.
+<br>
+<br>
+Algo muy ideal y a lo que ya estan acosumbrados los programadores a bajo nivel, los creadores de
+aventuras graficas o conversacionales, los programadores que a la vez son guionistas de una buena
+historia o los que realizan programas complicados, etc. es coger unas hojas, algo para escribir
+y ponerse a hacer un "guion" de lo que vamos a hacer.
+<br>
+Lo recomendable que escribas en uno o mas papeles puede ser (por orden): 
+<br>
+<font color="#cf0ad2">
+1) <font color="#addd00">Breve descripcion de lo que es el programa y que va a hacer.
+<br>
+<font color="#cf0ad2">
+2) <font color="#addd00">Publico al que va dirigido.
+<br>
+<font color="#cf0ad2">
+3) <font color="#addd00">Reunion de caracteristicas principales: fecha de inicio, lenguaje/s de programacion...
+<br>
+<font color="#cf0ad2">
+4) <font color="#addd00">Contenido del mismo: archivos adjuntos, opciones en el programa, etc.
+<br>
+<font color="#cf0ad2">
+5) <font color="#addd00">El comienzo del programa. Sus pantallas principales, estilo de presentacion, etc.
+<br>
+<font color="#cf0ad2">
+6) <font color="#addd00">Partes en que se estructura el programa y maneras de interactuar entre estas. Un buen esquema.
+<br>
+<font color="#cf0ad2">
+7) <font color="#addd00">Pequeño esbozo de personajes y algun que otro mapa, pantalla o situacion(si es un juego) y los
+primeros comandos para comenzarlo.
+<br>
+<font color="#cf0ad2">
+8) <font color="#addd00">Forma de distribucion del producto.
+<br>
+<br>
+<font color="#cf0ad2">
+NOTA: <font color="#addd00">Si se trata de un juego, y sobretodo de aventura, es muy bueno que
+realices un guion lo mas original, detallado y extenso posible (bien redactado). Y tambien
+necesitas darle un aspecto y personalidad superdetallados a todo lo que en el pongas: personajes,
+paisajes, pantallas, mapas, objetos...
+
+<br>
+<br>
+<center><img src="img/br/c2.gif"></center>
+
+</td>
+ </tr>
+</table>
+
+
+<br>
+
+
+<table background="img/bg/c5.jpg" width="52%">
+<tr>
+ <td>
+<center><img src="img/br/c.gif"></center>
+ </td>
+</tr>
+<tr>
+ <td>
+
+<font color="#b9cc4c">
+<br>
+Ha llegado la hora de la verdad. Ya sabes lo primordial para comenzar a "juguetear" con el Turbo
+C. Una vez mirado este codigo te recomendamos que lo cambies y hagas tus propias pruebas con tal
+de ver el efecto de los errores, etc. No hace falta que utilices copiar/pegar. Aqui tienes
+el <a href="ejemplos/c/ejemplo1.c">codigo fuente</a>. Observa este programa y "empollate" bien
+sus comandos pues es muy facil pero necesario para saber la sintaxis basica del C: 
+<br>
+<br>
+
+<h6>
+<font color="#ffffff">
+
+#include &lt;stdio.h&gt; <font color="#cc99ff">/* Declaracion de la libreria <b>stdio.h</b> */<br>
+<font color="#ffffff">
+#include &lt;conio.h&gt; <font color="#cc99ff">/* Declaracion de la libreria <b>conio.h</b> */<br>
+<br>
+<font color="#ffffff">
+   <font color="#cc99ff">/* Comentario oculto que solo leemos nosotros */ <br>
+<br>
+<font color="#ffffff">
+int b=0; <font color="#cc99ff">/* Declaramos una variable llamada <b>b</b> con el valor inicial de <b>0</b>. Esta podra
+ser utilizada en cualquier funcion ya que ha sido declarada fuera */
+<br>
+<br>
+<font color="#ffffff">
+main() <font color="#cc99ff">/* La primera funcion siempre ha de tener el nombre MAIN() */<br>
+<font color="#ffffff">
+	{ <font color="#cc99ff">/* Abrimos la llave para indicar el contenido de la funcion */<br>
+		<br>         
+<font color="#ffffff">
+		int a=0; <font color="#cc99ff">/* Declaramos la variable <b>a</b> con el valor <b>0</b>. Esta solo
+                podra ser utilizada dentro de la funcion donde se declara: <b>MAIN()</b> */<br>
+<font color="#ffffff">
+                clrscr(); <font color="#cc99ff">/* Limpiamos la pantalla */<br>
+<font color="#ffffff">
+		printf("\n\tHOLA MUNDO"); <font color="#cc99ff">/* Bajamos una linea y hacemos un tabulador e imprimimos la frase*/ <br>
+<font color="#ffffff">
+                printf("\nA = %d y B = %d",a,b); <font color="#cc99ff">/* Baja una linea e imprime el contenido de la variable <b>A</b> y <b>B</b> */<br>
+<font color="#ffffff">
+                getch(); <font color="#cc99ff">/* Hace una pausa hasta la pulsacion de una tecla */                
+<br>
+		
+<br>
+<font color="#ffffff">
+	} <font color="#cc99ff">/* Cerramos la llave del contenido de la funcion */<br>
+
+<br>
+<br>
+<font color="#ffff3d">
+<h5>
+Esta es el esquema de un programa muy sencillo: 
+<center>
+<br>
+<img src="img/gfx/c.gif" alt="Estructura de un programa en C">
+<br>
+<br>
+<img src="img/br/c2.gif"></center>
+
+</tr>
+ </td>
+</table>
+
+</center>
+
+<br>
+<br>
+
+<font color="#60d780">
+
+Acabamos de ver como se utilizan las <b>secuencias de escape</b>. Las diversas <b>secuencias de
+escape</b> estan comentadas en el numero 2 de GüebZine.
+<br>
+Su utilizacion es sencilla: printf("\Xtexto\X"); 
+<br>
+"X" es la secuencia de escape que queramos utilizar. Como podemos observar, las secuencias de
+escape solo se utilizan al principio o al final de cada contenido en un PRINTF y pueden estar
+juntas al texto, etc. 
+<br>
+<br>
+Para declarar una variable INTEGER (estas solo pueden guardar numerales. Su capacidad y funcion
+esta descrita en el numero 2 de GüebZine) se ha hecho, la primera, fuera de cualquier funcion 
+("b": esta se podra utilizar en cualquiera) y otra dentro de MAIN ("a": solo es posible
+utilizarla dentro de esta funcion).
+<br>
+<br>
+El texto de PRINTF se concentra entre dos comillas dobles: una de inicio del texto y otra de
+finalizacion (<b>"</b>).
+<br>
+<br>
+Para imprimir en pantalla una variable, se le asigna un puesto en el texto imprimido en PRINTF,
+con este formato: <b>%x</b>. Donde X es la letra que corresponde al tipo de variable. En este
+caso, la letra es "d" ("%d") al tratarse de una variable de tipo integer. En los proximos numeros
+iremos aprendiendo mas letras y mas tipos de variables.
+<br>
+Luego, se pone el nombre de la variable o variables que han de ser imprimidas en la posicion
+indicada. Estas han de estar odenadas segun su orden de impreso en pantalla y separada con una
+coma que se pone entre las comillas dobles de finalizacion del texto (<i>"</i>) y variable. Las
+variables tambien se separan entre ellas con una coma.
+<br>
+<br>
+El comando de borrado de pantalla: "CLRSCR();" y el de pausa: "GETCH();" no necesitan ningun
+comentario ya que se entienden. En el MS-DOS, el primero seria "CLS" y el segundo "PAUSE".
+<br>
+<br>
+El programa no tiene codigo de finalizacion ya que este se acaba cuando ya no encuentra mas
+comandos y solo esta la llave de cierre para MAIN().
+<br>
+<br>
+<font color="#f0ac44">
+Esto ha sido todo por ahora. Solo cabe decir que, para los que todavia no lo sepais, los
+programas han de ser escritos, ejecutados y compilados en un editor de C (y recomendamos que
+sean abiertos y leidos con uno de ellos). En este caso y para seguir el curso, recomendamos
+utilizar el TURBO C (para DOS, por supuesto). Donde encontrarlo ya se dijo en los numeros
+anteriores: busca en algun buscador por la red, pideselo a alguien en el IRC o, lo que os
+recomendamos, compralo.
+<br>
+<br>
+<b>
+Animo! el principio cuesta asimilar algunas cosas y entenderlas. Una vez te hagas a la sintaxis
+del C, no se te olvidara! :D
+<b>
+<br>
+<br>
+<a href="programa.htm">
+<center><img src="img/backs/c.gif" border=0 alt="Hacia atras"></center>
+</a>
+<br>
+<br>
+</body>
+</html>

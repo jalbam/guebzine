@@ -1,0 +1,446 @@
+<html>
+
+<script language="JavaScript">
+<!--
+// Número de la variable visitas:
+var visitas = 0;
+
+// Galleta. Funciones estándar:
+
+function ExtraeValorDeGalleta(val) {
+  if ((FinalDeGalleta = document.cookie.indexOf(";", val)) == -1) {
+     FinalDeGalleta = document.cookie.length;
+  }
+  return unescape(document.cookie.substring(val,FinalDeGalleta));
+}
+
+function LeerGalleta(NombreDeGalleta) {
+  var NumDeGalletas = document.cookie.length;
+  var NombreParaGalleta = NombreDeGalleta + "=";
+  var LongDeGalleta = NombreParaGalleta.length;
+  var x = 0;
+  while (x <= NumDeGalletas) {
+        var y = (x + LongDeGalleta);
+        if (document.cookie.substring(x, y) == NombreParaGalleta)
+           return (ExtraeValorDeGalleta(y));
+           x = document.cookie.indexOf(" ", x) + 1;
+           if (x == 0)
+              break;
+  }
+  return (null);
+}
+
+function CrearGalleta(Nombre, Valor, Expirar) {
+  var DiaDeHoy = new Date();
+  DiaDeHoy.setDate(DiaDeHoy.getDate() + Expirar);
+  document.cookie = Nombre + 
+                    "=" + 
+                    Valor + 
+                    "; expires=" +
+                    DiaDeHoy.toGMTString() + 
+                    ";"
+}
+
+function MostrarConsultas() {
+  // Primero averiguaremos si el usuario ha visitado esta
+  // página antes de examinar la galleta _PagVisitada:
+  GalletaUsuario = LeerGalleta("_PagVisitada");
+  if (GalletaUsuario == null)
+     visitas = 1;  // Esta es la primer visita
+  else
+     visitas = parseInt(GalletaUsuario) + 1;
+     // Crea o actualiza la galleta existente:
+     CrearGalleta("_PagVisitada", visitas, 30);
+     document.write("<font size=2><marquee>Pagina visitada <b>" +
+                    visitas + 
+                    "</b> veces</marquee>");
+}
+//-->
+</script>
+
+<script>
+/* Este script fue hecho por Bratta en www.bratta.com y puede ser usado
+gratuitamente siempre que se deje este mensaje (en Ingles) intecto.
+Agradecere los enlaces a mi pagina
+
+Si quiere que el texto aparezca en otra parte de la pagina entonces
+modifique el estilo del TAG.
+
+Variables:
+Primero el texto: */
+        text=new Array('http://','www','emumania','com','/guebzine','www.emumania.com/guebzine')
+
+// numero de textos
+        var numText=6
+        
+// colores:
+// el primer colos sera el color del texto cuando hace el zoom
+        color=new Array('#FF00E8','#C2C2C2','#8E8E8E','#424242','#202020')
+        
+// numero de colores
+        var numColors=5
+        
+//tama¤o del zoom al finalizar
+        var endSize=30
+
+//Velocidad del zoom (en milisegundos)
+        var Zspeed=200
+
+//Velocidad de cambio en los colores
+        var Cspeed=200
+
+//Fuente
+        var font='Arial Black'
+        
+// Esconder el texto cuando acaba el zoom? (true o false)
+        var hide=true
+
+
+
+
+// Texto original
+
+/*This script is made by bratta at www.bratta.com and can be used freely
+as long as this msg is instact. I would appriciate any links to my page.
+
+########################################################################
+########################################################################
+########################################################################
+If you want the text to appear differently on anothe place on the page
+or anything set that in the style tag of the zoom layer. 
+
+Here are the variables you have to set:
+First the text: (it will stop and fade/change the colors on the last one)
+        text=new Array('www','bratta','com','www.bratta.com')
+        
+set the number of text's
+        var numText=4
+        
+Now the colors:
+all you have to do is set the color you want to have in here: 
+(the first color will be the color that the text is when it zooms.)
+        color=new Array('#E8E8E8','#C2C2C2','#8E8E8E','#424242','#202020')
+        
+set the number of colors:
+        var numColors=5
+        
+set the size you want the zoom to end at:
+        var endSize=70
+
+Set the speed you want it to zoom in (in milliseconds)
+        var Zspeed=30
+
+Set the speed you want it too change colors in
+        var Cspeed=200
+
+Set font
+        var font='Arial Black'
+        
+do you want it to hide when its done? (true or false)
+        var hide=true
+        
+You shouldn't really have to set anything below this point
+######################################################################
+######################################################################
+######################################################################*/
+
+
+
+var size=10
+var gonum=0
+/*Browsercheck and settings vars
+######################################################################*/
+if (document.all) {
+                n=0
+                ie=1
+                zoomText='document.all.zoom.innerText=text[num]'
+                zoomSize='document.all.zoom.style.fontSize=size'
+                closeIt=""
+                fadeColor="document.all.zoom.style.color=color[num]"
+        }
+if (document.layers) {
+                n=1;ie=0
+                zoomText=""
+                zoomSize="document.zoom.document.write('<p align=\"center\" style=\"font-family:'+font+'; font-size:'+size+'px; color:'+color[0]+'\">'+text[num]+'</p>')"
+                closeIt="document.zoom.document.close()"
+                fadeColor="document.zoom.document.write('<p align=\"center\" style=\"font-family:'+font+'; font-size:'+endSize+'px; color:'+color[num]+'\">'+text[numText-1]+'</p>')"
+        }
+
+/*The functions for zooming text.
+####################################################################*/
+function zoom(num,fn){
+        if (size<endSize){
+                eval(zoomText)
+                eval(zoomSize)
+                eval(closeIt)
+                size+=5;
+                setTimeout("zoom("+num+",'"+fn+"')",Zspeed)
+        }else{
+                eval(fn);
+        }
+}
+/*The functions for fading/changing colors on text
+####################################################################*/
+function fadeIt(num){
+        if (num<numColors){
+                eval(fadeColor)
+                eval(closeIt)
+                num+=1;
+                setTimeout("fadeIt("+num+")",Cspeed)
+        }else{
+                hideIt()
+        }
+}
+/*This is the function that hides the layer after the zoom/color change
+####################################################################*/
+function hideIt(){
+        if(hide){
+                if(ie)document.all.zoom.style.visibility="hidden"
+                if(n)document.layers.zoom.visibility="hidden"
+        }
+}
+/*This is the functions that calls the right function...or something :}
+####################################################################*/
+function init(){
+        if(ie){
+                document.all.zoom.style.color=color[0]
+                document.all.zoom.style.fontFamily=font}
+        go(0)   
+}
+function go(num){
+        gonum+=1
+        size=10
+        if(num<numText){
+                zoom(num,'go('+gonum+')')
+        }else{
+                fadeIt(0)
+        }
+}
+//####################################################################
+</script>
+
+<script language="JavaScript1.2">
+
+function makearray(n) {
+    this.length = n;
+    for(var i = 1; i <= n; i++)
+        this[i] = 0;
+    return this;
+}
+
+hexa = new makearray(16);
+for(var i = 0; i < 10; i++)
+    hexa[i] = i;
+hexa[10]="a"; hexa[11]="b"; hexa[12]="c";
+hexa[13]="d"; hexa[14]="e"; hexa[15]="f";
+
+function hex(i) {
+    if (i < 0)
+        return "00";
+    else if (i > 255)
+        return "ff";
+    else
+        return "" + hexa[Math.floor(i/16)] + hexa[i%16];
+}
+
+function setbgColor(r, g, b) {
+    var hr = hex(r); var hg = hex(g); var hb = hex(b);
+    document.bgColor = "#"+hr+hg+hb;
+}
+
+function fade(sr, sg, sb, er, eg, eb, step) {
+    for(var i = 0; i <= step; i++) {
+        setbgColor(
+        Math.floor(sr * ((step-i)/step) + er * (i/step)),
+        Math.floor(sg * ((step-i)/step) + eg * (i/step)),
+        Math.floor(sb * ((step-i)/step) + eb * (i/step)));
+    }
+}
+
+function fadein() {
+	fade(255,255,255,0,0,0,50);
+}
+
+/* do fadein */
+fadein();
+</script>
+
+<body onload="init()" bgcolor="#000000" vlink="22aa80" link="#1acadb">
+<!-- Este es el zoom, para cambiar la apariencia cambia el parametro
+que desees. Recuerda que solo puedes cambiar width, top, height,
+left -->
+<div id="zoom" align="center" style="position:absolute; top:150">http://web.jet.es/justino</div>
+<bgsound src="midi/inicio.mid">
+<center>
+<script language="JavaScript">
+<!--
+function MostrarEncabezado() {
+  var LaFecha = new Date();
+  document.writeln("<table cellpadding=5 width=100% border=0>" +
+                   "<tr><td width=95% bgcolor=#110033 align=left>" +
+                   "<font color=White><center>Fecha:<font color=Yellow> " + LaFecha +  
+                   "</font></td></tr></table><p>");
+}
+MostrarEncabezado();
+//-->
+</script>
+<img src="img/logo.gif" alt="GüebZine No.4">
+<marquee>
+<h5>
+<font color="#ffff00">G<font color="#00aabb">ü<font color="#ffff00">e<font color="#00aabb">b<font color="#ffff00">Z<font color="#00aabb">i<font color="#ffff00">n<font color="#00aabb">e <font color="#ff0000">c<font color="#00ff00">o<font color="#ff0000">n <font color="#00ff00">m<font color="#ff0000">u<font color="#00ff00">c<font color="#ff0000">h<font color="#00ff00">i<font color="#ff0000">s<font color="#00ff00">i<font color="#ff0000">m<font color="#00ff00">a<font color="#ff0000">s <font color="#00ff00">n<font color="#ff0000">o<font color="#00ff00">v<font color="#ff0000">e<font color="#00ff00">d<font color="#ff0000">a<font color="#00ff00">d<font color="#ff0000">e<font color="#00ff00">s<font color="#ff0000">, <font color="#00ff00">q<font color="#ff0000">u<font color="#00ff00">e<font color="#ff0000"> l<font color="#00ff00">a<font color="#ff0000"> d<font color="#00ff00">i<font color="#ff0000">s<font color="#00ff00">f<font color="#ff0000">r<font color="#00ff00">u<font color="#ff0000">t<font color="#00ff00">e<font color="#ff0000">s<font color="#00ff00">!<font color="#ff0000">!<font color="#00ff00">!<font color="#00ff00">
+</marquee>
+</center>
+<br>
+<p align="right">
+<font color="#000000"><applet code="Slidetext.class" align="center" width="500" height="46">
+<param name="bgcolor" value="000000">
+<param name="font" value="TimesRoman">
+<param name="size" value="28">
+<param name="sleep" value="4000">
+<param name="speed" value="5">
+<param name="style" value="1">
+<param name="text" value="Las Novedades de GüebZine">
+<param name="txtcolor" value="00d9c5">
+</applet>
+<br>
+<h4>
+<font color="#75aa89">
+Y GüebZine mejora, cada vez mas. Gracias, como no, a todos vosotros: los lectores.
+Muchisimas gracias por leernos, criticarnos o prestarnos sugerencias, por ofreceros para
+colaborar, por enviar vuestro software o participar en algun concurso... por lo que sea, por
+estar ahi! ;D
+<br>
+<br>
+<font color="#aa1123">
+Como podeis observar se ha vuelto a introducir una mejora notable en cuanto a diseño. Esta vez,
+para no variar, se han mejorado todavia mas los menus.
+<br>
+La seccion 'Hacking' se encuentra ahora en 'Underground' junto a sus otras secciones 'hermanas'.
+Algo parecido sucede con la seccion 'Diseño' por Erterks, que apartir de ahora se aloja en 'Diseño' con un
+'Curso de HTML'! y algo mas (;
+<br>
+<font color="#e7b6ec">
+La nueva seccion por excelencia es, sin duda alguna, la de 'IRC'; que que se encuentra en ella?
+Pues un repasillo por este mundillo: podras aprender con el 'Curso IRC', informarte con
+'Mi Primer Script (mIRC)', saciar tu curiosidad con la seccion 'Canales' donde se comentan
+muchos de los canales mas visitados del IRC (IRC Hispano mayoritariamente), con entrevistas a los
+Admins, y muchisimo mas! ;D
+<br>
+<font color="#b4d6ab">
+Y como guinda del pastel, la seccion Links, donde podeis visitarla para aprender nuevas
+direcciones de interes en internet: necesarias, curiosas, interesantes... podeis
+enviarnos la url y hasta un banner de vuestra pagina o de cualquiera que os parezca para que sea
+expuesta gratuitamente en esta seccion, la cual tenemos que llenar mucho (:
+<br>
+<font color="#b4d6dd">
+Es obligatorio fijarse en la nueva entrada del Curso de Visual Basic, lo hallareis en
+Programacion.
+<br>
+<font color="#bbfb33">
+Para los adictos a las aventuras graficas clasicas, como yo, teneis un 'homenaje' a lo que fue
+'La Epoca Dorada de las Aventuras Graficas'. Se trata de una seccion uvicada en 'Ocio' y su
+nombre es 'Pollo de Goma' (Si hombre! el de la polea en el centro ;D). En ella se recordaran
+las mejores aventuras clasicas (Monkey Island, Maniac Mansion...), asi como trucos y
+curiosidades, os podreis bajar sus midis, soluciones completas, links, frases inmemorables,
+etc. (;
+<br>
+La seccion de Juegos se ha ampliado, antes Erterks comentaba un juego. Ahora se comentaran mas, y
+la seccion de Erterks ahora es 'A Fondo'.
+<font color="#343340">
+<br>
+<font color="#bb33aa">
+Tenemos 'Biblioteca' donde analizaremos los libros mas interesantes, y tambien 'Prensa', donde
+se comentan las distintas revistas, periodicos... todo ello en Actualidad.
+<br>
+<font color="#da660a">
+Algo que puede llegar a gustar mucho y hacer las delicias de casi todos los adictos, podria ser
+la seccion 'Sistemas Operativos' en Actualidad, donde aprenderemos a manejar los distintos
+sistemas operativos a nivel de usuario, asi como de profesional investigandolos a fondo;
+aprendiendo DOS y Windows 3.x/9x interno, asi como archivos de proceso por lotes, trucos para
+estos y su software... algun dia aprenderemos Linux, y mucho mas :D
+<br>
+<font color="#11aa77">
+Seguimos en Actualidad, donde encontrais la seccion 'Debates', que como bien dice su nombre,
+debatiremos algunos temas actuales que suelen crear polemica a la gente. Se expondra el tema
+y en el numero siguiente saldran vuestras opiniones y otro nuevo tema para el numero venidero.
+<br>
+<font color="#11bb11">
+En Actualidad tambien, disponeis de 'La Crisis del 00', donde debatiremos los problemas que
+conlleva y os informaremos de las soluciones, de algunos problemas desconocidos de los que casi no se
+habla y mas que os imaginais.
+<br>
+<font color="#aba1ad">
+En Techno Music podeis observar el apartado para bajaros los MIDIs de este mes, otro con algunas
+letras de grupos conocidos y finalmente uno con informacion de donde bajarse Players y otros
+programas de interes.
+<br>
+<font color="#adffad">
+En software ya disponeis de 'Ejemplos', donde se hallan todos los archivos referentes a las
+distintas secciones de la revista, asi como archivos de ejemplo y demas. La posible descarga
+de software que esta en el nuevo espacio de GüebZine en la red, es otra novedad.
+<br>
+<font color="#adabff">
+Ya que no sabia donde ponerla, la seccion de ocultismo, 'Paranormal', la he puesto en Ocio.
+Esperemos que dentro de poco tenga una nueva uvicacion. Ahi se trataran aquellos temas ocultos 
+en los que la gente suele creer y no creer; los que crean tanta polemica. Discutiremos temas,
+daremos direcciones de paginas relacionadas, software, curiosidades para que las practiqueis y
+todas esas cosas que tanto atraen.
+<br>
+<font color="#2255ff">
+Y para que participeis desesperadamente, teneis 'El Concurso de Mascota' para GüebZine. Algo
+bastante curioso donde todos podeis enviarnos vuestras candidatas (:
+<br>
+<font color="#2aabbb">
+GüebZine ya dispone de un lugar en Internet donde almacenar aquellos archivos que no se pueden
+donar en la revista y que son nombrados y/o utilizados por/en esta. Es un lugar con 20Mb
+gratuitos para llenar, pero no se pueden poner archivos de mas de un 'mega' (se han de
+particionar). Aun asi, cuando nombremos un programa que no este junto a la revista os
+informaremos si este puede ser encontrado en dicho espacio. Esperemos que esto guste (;
+<br>
+<font color="#f5b7dd">
+Asi pues, difrutar la revista que esta viene muy cargada. Las secciones a rebosar, ya sean nuevas
+o viejas; y las viejas contienen nuevos apartados. No puedo explicarlo todo aqui, asi que lo
+mejor es que comiences a descubir por ti mismo. Seguro que te llevas alguna sorpresa que otra (;
+<br>
+<br>
+<font color="#d4060d">
+No me queda mas remedio pedir desde aqui mas colaboracion. Por que, aunque cada vez haya mas, no
+todos los que la leeis colaborais enviando cualquier cosa. Nisiquiera una buena parte se decide.
+Asi que desde aqui os pido, una vez mas, que si estas leyendo esto, no te lo pienses mas y envia
+tu opinion, criticas o sugerencias, programas, colabora en cualquier seccion... lo que quieras,
+es gratis! (;
+<br>
+<br>
+<font color="#11ff00">Recuerda: <font color="#aadd00">la revista se ve mejor con <font color="#ff3322">Internet Explorer<font color="#aadd00">, resolucion <font color="#ff3322">800x600<font color="#aadd00"> a <font color="#ff3322">24bits color<font color="#aadd00">
+<font color="#aadd00">y <font color="#ff3322">pantalla completa <font color="#aadd00">(<font color="#33bbcc">pulsa F11<font color="#aadd00">).
+<h5>
+<font color="#4865aa">
+Si alguien quisiera contactar conmigo por Internet, ademas del correo electronico
+(<a href="mailto:jalbam@tinet.fut.es">jalbam@tinet.fut.es</a>) puede hacerlo por el IRC:
+ en el IRC Hispano (irc.jet.es, por ejemplo), mi nick es A-Kristo. Tambien teneis el Correo
+Tradicional, todo lo encontrareis en la pagina de <a href="contacto.htm">Contacto</a>.
+<br>
+
+<font color="#baaa22">
+<p aling="left">
+</h5>
+<script>
+MostrarConsultas();
+</script>
+
+<p align="right">
+
+<table border=0 widht="100%">
+<tr>
+<td>
+<img src="img/penta.gif" alt="Autor">
+</td>
+<td>
+<h6>
+<font color="#aa4457">
+DreamLord <font color="#aa44cc">(<font color="#9a0000">Anti o A-Kristo<font color="#aa44cc">)
+</td>
+</tr>
+</table>
+</body>
+</html>

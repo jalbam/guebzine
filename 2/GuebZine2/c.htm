@@ -1,0 +1,437 @@
+<html>
+<title>Curso de C [2ª Parte]</title>
+<body bgcolor="#44a232">
+<bgsound src="midi/c.mid">
+<h1>
+<font color="#ddca00">
+<center>
+Curso de C
+<h5>
+<br>
+<font color="#acca87">
+[2ª Parte]
+</center>
+<br>
+<br>
+<h4>
+<font color="#983463">
+Habeis enviado cartas, habeis pedido un curso mas completo... asi se hara.
+<br>
+Tambien habeis pedido un curso mas 'acelerado', intentaremos dar lo mayor posible pero explicando
+muy detenidamente cada cosa.
+<br>
+Muchos quereis codigo fuente de los ejemplos y asi se hara; tambien os daremos otros codigos
+interesantes...
+<br>
+<br>
+<font color="#603498">
+Muchos de vosotros teneis aun la duda de como se compilan los programas: en el curso anterior
+se dijo que utilizariamos el <b>Turbo C</b>. Donde encontrarlo? <i>Borland Turbo C</i> lo podeis
+comprar o, como ultima opcion, pedirlo a alguien del IRC Hispano en el canal #Programacion, por
+ejemplo.
+<br>
+<br>
+<font color="#6700aa">
+Acontinuacion os paso un poco de informacion general que os servira de gran ayuda a muchos de
+vosotros (por no decir a todos). Aqui se explican algunas combinaciones de teclas mas utilizadas
+en Turbo C, asi como los diferentes tipos de variables, etc...
+<br>
+Espero que lo disfruteis:
+<br>
+<table border cols=3 widht="100%" bgcolor="#dd0011">
+<tr>
+<td><center><font color="#ffaa00">Comando</center></td>
+<td><center><font color="#ffaa00">Convinacion</center></td>
+<td><center><font color="#ffaa00">Accion</center></td>
+</tr>
+<tr>
+<td>Ctrl+D</td>
+<td>[Flecha Derecha]</td>
+<td>Un caracter a la derecha</td>
+</tr>
+<tr>
+<td>Ctrl+S</td>
+<td>[Flecha Izquierda]</td>
+<td>Un caracter a la izquierda</td>
+</tr>
+<tr>
+<td>Ctrl+E</td>
+<td>[Flecha Arriba]</td>
+<td>Una linea arriba</td>
+</tr>
+<tr>
+<td>Ctrl+X</td>
+<td>[Flecha Abajo]</td>
+<td>Una linea abajo</td>
+</tr>
+<tr>
+<td>Ctrl+F</td>
+<td>[Ctrl + Flecha Derecha]</td>
+<td>Una palabra a la derecha</td>
+</tr>
+<tr>
+<td>Ctrl+A</td>
+<td>[Ctrl+Flecha Izquierda]</td>
+<td>Una palabra a la izquierda</td>
+</tr>
+<tr>
+<td>Ctrl+W</td>
+<td></td>
+<td>Pantalla arriba</td>
+</tr>
+<tr>
+<td>Ctrl+Z</td>
+<td></td>
+<td>Pantalla abajo</td>
+</tr>
+<tr>
+<td>Ctrl+R</td>
+<td>[PgUp]</td>
+<td>Sube una pagina(pantalla)</td>
+</tr>
+<tr>
+<td>Ctrl+C</td>
+<td>[PgUp]</td>
+<td>Baja una linea(pantalla)</td>
+</tr>
+<tr>
+<td>Ctrl+QE</td>
+<td>[Ctrl+Inicio]</td>
+<td>Parte superior de la ventana</td>
+</tr>
+<tr>
+<td>Ctrl+QX</td>
+<td>[Ctrl+Fin]</td>
+<td>Parte inferior de la ventana</td>
+</tr>
+<tr>
+<td>Ctrl+QS</td>
+<td>[Inicio]</td>
+<td>Principio de la linea</td>
+</tr>
+<tr>
+<td>Ctrl+QD</td>
+<td>[Fin]</td>
+<td>Final de la linea</td>
+</tr>
+<tr>
+<td>Ctrl+QR</td>
+<td>[Ctrl+RePag]</td>
+<td>Principio del fichero</td>
+</tr>
+<tr>
+<td>Ctrl+QC</td>
+<td>[Ctrl+Fin]</td>
+<td>Final de la linea</td>
+</tr>
+<tr>
+<td>Ctrl+QB</td>
+<td></td>
+<td>Principio del bloque</td>
+</tr>
+<tr>
+<td>Ctrl+QK</td>
+<td></td>
+<td>Final del bloque</td>
+</tr>
+<tr>
+<td>Ctrl+QP</td>
+<td></td>
+<td>Posicion previa</td>
+</tr>
+<tr>
+<td>Ctrl+QY</td>
+<td></td>
+<td>Borrar hasta el final de la linea</td>
+</tr>
+<tr>
+<td>Ctrl+Y</td>
+<td></td>
+<td>Borra una linea</td>
+</tr>
+<tr>
+<td>Ctrl+V</td>
+<td>[Ins]</td>
+<td>Insertar On/Off</td>
+</tr>
+<tr>
+<td>Ctrl+QL</td>
+<td></td>
+<td>Recupera una linea</td>
+</tr>
+<tr>
+<td>Ctrl+N</td>
+<td></td>
+<td>Inserta una linea en blanco</td>
+</tr>
+<tr>
+<td>Ctrl+KB</td>
+<td></td>
+<td>Marca el principio</td>
+</tr>
+<tr>
+<td>Ctrl+KK</td>
+<td></td>
+<td>Marca final del bloque</td>
+</tr>
+<tr>
+<td>Ctrl+KT</td>
+<td></td>
+<td>Marca una palabra</td>
+</tr>
+<tr>
+<td>Ctrl+QB</td>
+<td></td>
+<td>Se mueve hasta el principio</td>
+</tr>
+<tr>
+<td>Ctrl+QK</td>
+<td></td>
+<td>Se mueve hasta el final</td>
+</tr>
+<tr>
+<td>Ctrl+KY</td>
+<td></td>
+<td>Borra un bloque</td>
+</tr>
+<tr>
+<td>Ctrl+KV</td>
+<td></td>
+<td>Mueve un bloque</td>
+</tr>
+<tr>
+<td>Ctrl+KC</td>
+<td></td>
+<td>Copia un bloque</td>
+</tr>
+<tr>
+<td>Ctrl+KH</td>
+<td>Oculta/Muestra un bloque</td>
+<td></td>
+</tr>
+<tr>
+<td>Ctrl+KW</td>
+<td></td>
+<td>Escribe en el disco</td>
+</tr>
+<tr>
+<td>Ctrl+KR</td>
+<td></td>
+<td>Lee del disco</td>
+</tr>
+<tr>
+<td>Ctrl+KP</td>
+<td></td>
+<td>Imprime un bloque</td>
+</tr>
+<tr>
+<td>Ctrl+OI</td>
+<td></td>
+<td>Conmuta la autoindentacion</td>
+</tr>
+<tr>
+<td>Ctrl+OT</td>
+<td></td>
+<td>Conmuta el modo tabulacion</td>
+</tr>
+<tr>
+<td>Ctrl+QF</td>
+<td></td>
+<td>Busca</td>
+</tr>
+<tr>
+<td>Ctrl+QA</td>
+<td></td>
+<td>Busca y substituye</td>
+</tr>
+<tr>
+<td>Ctrl+L</td>
+<td></td>
+<td>Repite la ultima busqueda</td>
+</tr>
+<tr>
+<td>Ctrl+KN</td>
+<td></td>
+<td>Pone marca</td>
+</tr>
+<tr>
+<td>Ctrl+QN</td>
+<td></td>
+<td>Se mueve a la marca</td>
+</tr>
+<tr>
+<td>Ctrl+Q[</td>
+<td></td>
+<td>Pares de marcas hacia delante</td>
+</tr>
+<tr>
+<td>Ctrl+Q]</td>
+<td></td>
+<td>Pares de marcas hacia atras</td>
+</tr>
+<tr>
+<td>Ctrl+KS</td>
+<td></td>
+<td>Graba fichero</td>
+</tr>
+<tr>
+<td>Ctrl+KD</td>
+<td></td>
+<td>Sale del editor</td>
+</tr>
+<tr>
+<td>Ctrl+KQ</td>
+<td></td>
+<td>Sale del editor</td>
+</tr>
+<tr>
+<td>Ctrl+KP</td>
+<td></td>
+<td>Imprime el fichero de edicion</td>
+</tr>
+<tr>
+<td>Ctrl+U</td>
+<td></td>
+<td>Aborta la operacion</td>
+</tr>
+<tr>
+<td>Ctrl+P</td>
+<td></td>
+<td>Inserta caracter Ctrl</td>
+</tr>
+</table>
+<br>
+<table border cols=2 widht="100%" bgcolor="#dd0011">
+<tr>
+<td><center><font color="#ffaa00">Opcio de busqueda y substitucion</center></td>
+<td><center><font color="#ffaa00">Accion</center></td>
+</tr>
+<tr>
+<td>B</td>
+<td>Busqueda hacia atras</td>
+</tr>
+<tr>
+<td>G</td>
+<td>Busqueda global</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Siguiente o sin verificacion</td>
+</tr>
+<tr>
+<td>x</td>
+<td>Busca las x siguientes apariciones/Substituye x apariciones</td>
+</tr>
+<tr>
+<td>U</td>
+<td>Ignora mayusculas/minusculas</td>
+</tr>
+<tr>
+<td>W</td>
+<td>Busca solo palabras completas</td>
+</tr>
+</table>
+<br>
+<table border cols=2 widht="100%" bgcolor="#dd0011">
+<tr>
+<td><center><font color="#ffaa00">Secuenciales de escape</center></td>
+<td><center><font color="#ffaa00">Accion</center></td>
+</tr>
+<tr>
+<td>\a</td>
+<td>Alerta(Beep)</td>
+</tr>
+<tr>
+<td>\b</td>
+<td>Retroceso</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>Forma de alimentacion</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>Salto de linea</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>TAB horizontal</td>
+</tr>
+<tr>
+<td>\v</td>
+<td>TAB vertical</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>Retorno de carro</td>
+</tr>
+<tr>
+<td>\"</td>
+<td>Comillas dobles</td>
+</tr>
+<tr>
+<td>\'</td>
+<td>Comilla simple</td>
+</tr>
+<tr>
+<td>\\</td>
+<td>Barra inclinada</td>
+</tr>
+<tr>
+<td>\?</td>
+<td>Signo de interrogacion</td>
+</tr>
+<tr>
+<td>\DDD</td>
+<td>Codigo de caracter octal</td>
+</tr>
+<tr>
+<td>\xHHH</td>
+<td>Codigo de caracter hexadecimal</td>
+</tr>
+<tr>
+<td>\XHHH</td>
+<td>Codigo de caracter hexadecimal</td>
+</tr>
+</table>
+<table border cols=2 widht="100%" bgcolor="#dd0011">
+<tr>
+<br>
+<td><center><font color="#ffaa00">Tipos de Datos (variables)</center></td>
+<td><center><font color="#ffaa00">Capacidad</center></td>
+</tr>
+<tr>
+<td>Char</td>
+<td>-128 a 127</td>
+</tr>
+<tr>
+<td>Unsigned Char</td>
+<td>0 a 255</td>
+</tr>
+<tr>
+<td>Int</td>
+<td>-32768 a 32767</td>
+</tr>
+<tr>
+<td>Unsigned Int</td>
+<td>0 a 65535</td>
+</tr>
+<tr>
+<td>Long</td>
+<td>-2147483648 a 2147483647</td>
+</tr>
+<tr>
+<td>Unsigned Long</td>
+<td>0 a 4294967295</td>
+</tr>
+<tr>
+<td>Float</td>
+<td>-1.8E-38 a 3.4E+38</td>
+</tr>
+<tr>
+<td>Double</td>
+<td>-2.7E-307 a 1.7E+308</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,36 @@
+               _   .  .  __   _  -DreamLord (Anti o A-Kristo)-
+              /  _ |  | |__ | _|  ___   .      ,__
+              \__/ |__| |__ |  _|   /   | |\ | |__
+  http://www.emumania.com/guebzine /__  | | \| |__
+                         
+                              [GüebZine]
+             
+
+Numero:     GüebZine nº3
+URL:        http://www.emumania.com/guebzine/
+Formato:    HTML
+>Creador:   A-Kristo
+ *E-Mail:   jalbam@tinet.fut.es
+
+BROWSER:    MS Internet Explorer [recomendado]
+PANTALLA:   Completa (pulsa tecla F11).
+RESOLUCION: 800x600 a 24bits color.
+
+Archivo Principal:  guebzine.htm
+Ejemplos:           \ejemplos\
+Leeme:              leeme.txt
+Software:           \soft\
+Midis:              \midis\
+Imagenes:           \img\
+EmuMania:           \emumania\
+*Entrevistas:       \evistas\ ->evistas.htm
+*Screenshots:       \scrshts\ ->scrshts.htm
+
+-< Gracias a todos los que han colaborado en esta revista
+   electronica ya que son los que hacen posible su existencia (;
+
+-> Por favor, colabora en alguna (o todas! xD) de las distintas 
+secciones para ayudar a mantener este E-Zine (WebZine! ;D).
+
+
+                *DreamLord (Anti o A-Kristo)*

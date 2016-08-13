@@ -1,0 +1,396 @@
+<html>
+<SCRIPT language="JavaScript">
+<!--
+//************************************************************* 
+// fade script ver0.1 by Kouichirou@Eto.com 1996/02/20 
+// Copyright (c) 1996 Kouichirou Eto. All Rights Reserved. 
+// You can freely copy, use, modify this script, 
+// if the credit is given in the source. 
+// If you would like to get information for this script, 
+// please access <http://eto.com/JavaScript/> 
+
+function makearray(n) 
+        {    
+        this.length = n;    
+        for(var i = 1; i <= n; i++) this[i] = 0;    
+        return this;
+        }
+
+hexa = new makearray(16);
+for (var i = 0; i < 10; i++) 
+	{
+	hexa[i] = i;
+	}
+hexa[10]="A"; 
+hexa[11]="B"; 
+hexa[12]="C";
+hexa[13]="D"; 
+hexa[14]="E"; 
+hexa[15]="F";
+
+function hex(i) 
+        {    
+        if (i < 0) return "00";    
+          else 
+             if (i > 255) return "FF";    
+	       else 
+		  return "" + hexa[Math.floor(i/16)] + hexa[i%16];
+        }
+
+function setbgColor(red, green, blue) 
+        {    
+        var hr = hex(red); 
+        var hg = hex(green); 
+        var hb = hex(blue);    
+        document.bgColor="#"+hr+hg+hb;	
+        }
+
+function fade(sr, sg, sb, er, eg, eb, step) 
+        {    
+        var r=null;
+	var g=null;
+	var b=null;
+        for(var i = 0; i <= step; i++) 
+	   {                  
+	   r=Math.floor(sr * ((step-i)/step) + er * (i/step));
+           g=Math.floor(sg * ((step-i)/step) + eg * (i/step));
+	   b=Math.floor(sb * ((step-i)/step) + eb * (i/step));    
+           setbgColor(r,g,b);     
+           }
+        }
+
+//* Usage: *   
+//     fade(inr,ing,inb, outr,outg,outb, step); 
+//  example. 
+//     fade(255,0,0, 255,255,255, 255); 
+//
+// fade from black to white with very slow speed. 
+//      fade(0,255,0, 0,0,255, 50); 
+// same as above  
+//      fade(0xff,0x00,0x00, 0x00,0x00,0xff, 50); 
+// fade from red to blue with fast speed. 
+// step 2 is very fast and step 255 is very slow. 
+
+
+function fadein() 
+        {    
+        fade(255,0,0, 0,0,0, 204);
+        }
+function fadeout() 
+        {
+        fade(0,0,255, 0,255,0, 220);
+        }
+//
+// do fadein 
+//
+
+fadein();
+
+//***** end fade script *****
+
+// -->
+</script>
+<body bgcolor="#000000">
+<center>
+<a href="http://www.emumania.com/guebzine" target="GuebZine OnLine">
+<img src="img/menu/menu.gif" alt="GüebZine" border=0 onMouseOver="window.status='A la Pagina Web de GüebZine';return true" 
+onMouseOut="window.status='';return true">
+<applet code="Banner.class" width="95" height="15">
+<param name="bcolor" value="000000">
+<param name="bwidth" value="100">
+<param name="drawframe" value="1">
+<param name="fcolor" value="FFFFFF">
+<param name="flicker" value="0">
+<param name="fontnum" value="0">
+<param name="fontsize" value="10">
+<param name="forward" value="1">
+<param name="speed" value="95">
+<param name="text" value="Colabora por favor!">
+</applet>
+<br>
+<br>
+<a href="inicio.htm" target="cuerpo">
+<img src="img/menu/inicio.gif" border=0 alt="Pagina Principal" onMouseOver="window.status='Pagina Principal';return true" 
+onMouseOut="window.status='';return true">
+</a>
+<br>
+<a href="editor.htm" target="cuerpo">
+<img src="img/menu/editor.gif" border=0 alt="Comentarios del Autor" onMouseOver="window.status='Comentarios del Autor';return true" 
+onMouseOut="window.status='';return true">
+</a>
+<br>
+<a href="actual.htm" target="cuerpo">
+<img src="img/menu/actual.gif" border=0 alt="Actualidad" onMouseOver="window.status='Actualidad';return true" 
+onMouseOut="window.status='';return true">
+</a>
+<br>
+<a href="concurso.htm" target="cuerpo">
+<img src="img/menu/concurso.gif" border=0 alt="Concursos" onMouseOver="window.status='Concursos';return true" 
+onMouseOut="window.status='';return true">
+</a>
+<br>
+<a href="diseno.htm" target="cuerpo">
+<img src="img/menu/diseno.gif" border=0 alt="Diseño: HTML..." onMouseOver="window.status='Diseño: HTML...';return true" 
+onMouseOut="window.status='';return true">
+</a>
+<br>
+<a href="emu.htm" target="cuerpo">
+<img src="img/menu/emu.gif" border=0 alt="Emulacion" onMouseOver="window.status='Emulacion';return true" 
+onMouseOut="window.status='';return true">
+</a>
+<br>
+<a href="irc.htm" target="cuerpo">
+<img src="img/menu/irc.gif" border=0 alt="IRC" onMouseOver="window.status='IRC';return true" 
+onMouseOut="window.status='';return true">
+</a>
+<br>
+<a href="ocio.htm" target="cuerpo">
+<img src="img/menu/ocio.gif" border=0 alt="Ocio: PuzzleHistoria..." onMouseOver="window.status='Ocio';return true" 
+onMouseOut="window.status='';return true">
+</a>
+<br>
+<a href="programa.htm" target="cuerpo">
+<img src="img/menu/programa.gif" border=0 alt="Programacion" onMouseOver="window.status='Programacion';return true" 
+onMouseOut="window.status='';return true">
+<br>
+<a href="soft.htm" target="cuerpo">
+<img src="img/menu/soft.gif" border=0 alt="Software" onMouseOver="window.status='Software';return true" 
+onMouseOut="window.status='';return true">
+<br>
+<a href="techno.htm" target="cuerpo">
+<img src="img/menu/techno.gif" border=0 alt="Musica Tecnologica" onMouseOver="window.status='Musica Tecnologica';return true" 
+onMouseOut="window.status='';return true">
+<br>
+<a href="under.htm" target="cuerpo">
+<img src="img/menu/under.gif" border=0 alt="Hacking y demas" onMouseOver="window.status='Hacking y demas';return true" 
+onMouseOut="window.status='';return true">
+</a>
+<br>
+<a href="links.htm" target="cuerpo">
+<img src="img/menu/links.gif" border=0 alt="Links" onMouseOver="window.status='Links';return true" 
+onMouseOut="window.status='';return true">
+</a>
+<br>
+<a href="chat.htm" target="Chat">
+<img src="img/menu/chat.gif" border=0 alt="Chat GüebZine" onMouseOver="window.status='Chat GüebZine';return true" 
+onMouseOut="window.status='';return true">
+</a>
+<br>
+<a href="under.htm" target="GuestBook">
+<img src="img/menu/gbook.gif" border=0 alt="Libro de Visitas" onMouseOver="window.status='Libro de Visitas';return true" 
+onMouseOut="window.status='';return true">
+</a>
+<br>
+<br>
+<a href="contacto.htm" target="cuerpo">
+<img src="img/menu/contacto.gif" border=0 alt="Medios de Contacto" onMouseOver="window.status='Medios de Contacto';return true" 
+onMouseOut="window.status='';return true">
+</a>
+<br>
+<a href="mailto:jalbam@tinet.fut.es" target="cuerpo">
+<img src="img/menu/email.gif" border=0 alt="Enviar E-Mail" onMouseOver="window.status='E-Mail a  [ jalbam@tinet.fut.es ]';return true" 
+onMouseOut="window.status='';return true">
+</a>
+<br>
+<br>
+<img src="img/screen.gif" alt="Resolucion Recomendada">
+<br>
+<SCRIPT LANGUAGE="Javascript">
+<!--  
+// Para que funcione debe dar el valor apropiado a
+// las variables que se detallan al principio de 
+// este script.
+
+//------------------------------------------------------------------------------------------------------------------------
+//      Javascript Graphic Clock
+//      version 2.3
+//      June 6, 1997
+//
+//      Autor: Kendal Van Dyke
+//                      email: kendal@freenet.tlh.fl.us
+//                              OR vandyke@cs.fsu.edu
+//                      web:  http://www.cs.fsu.edu/~vandyke/
+//      
+//      Historia:
+//              2.3 - Junio 6, 1997
+//                       Fijado un error que causaba errores masivos  
+//                       cuando el usuario redefinia el tama¤o del navegador
+//                       Tambien se elimino la necesidad de la funcion
+//                       findIndexOf
+//              2.2 - Abril 30, 1997
+//                       Fixed un error que causaba errores cuando 
+//                       la hora cambiaba desde un doble digito
+//                       a un solo digito (i.e. 12 AM o PM a 1 AM o PM)      
+//              2.11 - Abril 21, 1997
+//                       Se cambio la URL oficial de Javascript Graphic Clock 
+//              2.1 - Abril 3, 1997
+//                       Fijado un error en el ajuste de la hora para reflejar 
+//                       una apariencia "regular". La vieja version daba 
+//                       12 am como 0 am
+//              2.0 - Marzo 31, 1997
+//                       Se a¤adieron las variables digit_images, separator_images,  
+//                       y ampm_images
+//                       Se a¤adio la funcion makeImageArray para
+//                       devolver la matriz de nuevas imagenes
+//                       A¤adida la funcion findIndexOf para hallar
+//                       el indice de una imagen en document.images[] 
+//                       A¤adido el soporte para cargar en memoria todas
+//                       las imagenes, asi el usuario no tiene que estar 
+//                       constantemente conectado
+//                       Renombradas las variables number_width como 
+//                       digit_width y colon_width como separator_width
+//                       Borrada la variable base
+//                       Las imagenes se reemplazan por referencias a un valor 
+//                       en las matrices digit_images, separator_images, y 
+//                       ampm_images arrays
+//
+//              1.0 - Marzo 27, 1997
+//                      Esta es la primera version de este script 
+//                      - No hay revisiones!
+//
+//      Este script es cedido por el autor como de dominio publico...
+//      pero, por favor, recuerde atribuirlo a quien lo creo -
+//      ¨Quedria que alguien usara algo que usted escribio sin reconcerselo?
+//------------------------------------------------------------------------------------------------------------------------
+
+var digit_images;               // La matriz de digitos 0-9
+var separator_images;           // La matriz de las imagenes blank y colon 
+var ampm_images;                // La matriz de las imagenes am y pm 
+
+var image_base = "img/reloj/";     // Directorio que contiene las imagenes
+var image_type = ".gif";                // Formato grafico de las imagenes
+var image_height = 10;          // Alto de las imagenes
+var digit_width =10;            // Ancho de los digitos 0-9 
+var ampm_width = 16;            // Ancho de las imagenes AM y PM 
+var separator_width = 10;        // Ancho de los dos puntos
+var clockDelay = 900;           // Espera en milisegundos entre refrescos. 
+                                // Debido al retardo en el cambio de imagenes
+                                //      debe ser de unos 800-900
+                                //      para un retardo de 1 segundo y
+                                //      alrededor de 300-400 para 1/2 segundo
+
+var hour1 = "blank";            // El primer digito en la hora
+var hour2 = "blank";            // El segundo digito en la hora
+var minute1 = "blank";          // El primer digito en los minutos
+var minute2 = "blank";          // El segundo digito en los minutos
+var ampm;                       // Discierne entre AM o PM
+
+var now;                        // Usado al tomar la fecha
+var cur_hour;                   // Usado al tomar la hora
+var cur_minute;                 // Usado al tomar los minutos
+
+
+function makeImageArray(length, ImageWidth, ImageHeight){       // Devuelve una matriz de imagenes
+  this.length = length;                                         // en las que el indice del 1er 
+                                                                // elemento es 0
+  for ( i = 0; i < length; i++ ){
+    this[i] = new Image(ImageWidth, ImageHeight);
+  }
+  return this;
+}
+
+function UpdateClock(hr1, hr2, min1, min2, separator){          // Actualiza el reloj
+
+  now = new Date();                     // Toma la fecha
+  cur_hour = now.getHours();            // Toma la hora de la fecha
+  cur_minute = now.getMinutes();        // Toma los minutos de la fecha
+
+
+  // Determina si es Am o Pm
+  if (cur_hour >= 12){ampm = "pm";}
+  else{ampm = "am";}
+
+  // Ajusta el tiempo para dar el tiempo  "regular" (i.e. horas 1-12 en vez de 0-23)
+  if (cur_hour >= 13){cur_hour = cur_hour - 12;}
+  if (cur_hour == 0){cur_hour = 12;}
+
+  // Convertimos cur_hour y cur_minute a cadenas
+  cur_hour += "";
+  cur_minute += "";
+
+  // Asigna los digitos individuales de la hora a hour1 y hour2
+  if (cur_hour >= 10){
+        hour1 = cur_hour.charAt(0);
+        hour2 = cur_hour.charAt(1);
+  }
+  else{
+        hour1 = "0";
+        hour2 = cur_hour.charAt(0);
+  }
+
+  // Asigna los digitos individuales de los minutos a minute1 y minute2
+  if (cur_minute >= 10){
+        minute1 = cur_minute.charAt(0);
+        minute2 = cur_minute.charAt(1);
+  }
+  else{
+        minute1 = "0";
+        minute2 = cur_minute.charAt(0);
+  }
+
+
+  // Es necesario chequear si alguno de los digitos en la hora ha cambiado
+  // Si alguno lo ha hecho, entonces cambia la imagen correspondiente. 
+  // NOTE: Esto solo funciona con Netscape 3.0 o superior, 
+  // por tanto chequea antes el navegador del usuario
+
+  if (parseInt(navigator.appVersion.substring(0,1))>=3) {       // Netscape 3.0 o superior
+    if (hour1 == "0"){document.clock1.src = image_base + "blank" + image_type;}
+      else {document.clock1.src = digit_images[hour1].src;}
+    document.clock2.src = digit_images[hour2].src;
+    if (separator == "blank"){document.clock3.src = separator_images[0].src;}
+      else {document.clock3.src = separator_images[1].src;}
+    document.clock4.src = digit_images[minute1].src;
+    document.clock5.src = digit_images[minute2].src;
+    if (ampm == "am"){document.clock7.src = ampm_images[0].src;}
+      else {document.clock7.src = ampm_images[1].src;}
+  }
+
+
+  if (separator == "blank"){setTimeout("UpdateClock(hour1, hour2, minute1, minute2, 'colon')", clockDelay);}
+  else{setTimeout("UpdateClock(hour1, hour2, minute1, minute2, 'blank')", clockDelay);}
+} // Esto acaba la funcion UpdateClock
+
+// Este script solo funciona con Netscape 3.0 o superior, asi que antes
+// chequeamos el navegador del usuario
+
+function pon_hora() {
+
+if (parseInt(navigator.appVersion.substring(0,1))>=3) {         // Netscape 3.0 o superior
+
+  digit_images = new makeImageArray(10, digit_width, image_height);
+  separator_images = new makeImageArray(2, separator_width, image_height);
+  ampm_images = new makeImageArray(2, ampm_width, image_height);
+
+  for ( i = 0; i < 10; i++ ){digit_images[i].src = image_base + i + image_type;}
+  separator_images[0].src = image_base + "blank" + image_type;
+  separator_images[1].src = image_base + "colon" + image_type;
+  ampm_images[0].src = image_base + "am" + image_type;
+  ampm_images[1].src = image_base + "pm" + image_type;
+
+  document.write('<A HREF="http://www.emumania.com/guebzine/" onMouseOver="window.status=\'Pagina de GüebZine\'; return true;" onMouseOut="window.status=\'\'; return true;" TARGET="GüebZine On-Line">');
+  document.write('<IMG NAME="clock1" SRC="' + image_base + 'blank' + image_type + '" WIDTH="' + digit_width + '" HEIGHT="' + image_height + '" BORDER="0">');
+  document.write('<IMG NAME="clock2" SRC="' + image_base + 'blank' + image_type + '" WIDTH="' + digit_width + '" HEIGHT="' + image_height + '" BORDER="0">');
+  document.write('<IMG NAME="clock3" SRC="' + image_base + 'blank' + image_type + '" WIDTH="' + separator_width + '" HEIGHT="' + image_height + '" BORDER="0">');
+  document.write('<IMG NAME="clock4" SRC="' + image_base + 'blank' + image_type + '" WIDTH="' + digit_width + '" HEIGHT="' + image_height + '" BORDER="0">');
+  document.write('<IMG NAME="clock5" SRC="' + image_base + 'blank' + image_type + '" WIDTH="' + digit_width + '" HEIGHT="' + image_height + '" BORDER="0">');
+  document.write('<IMG NAME="clock6" SRC="' + image_base + 'blank' + image_type + '" WIDTH="' + separator_width + '" HEIGHT="' + image_height + '" BORDER="0">');
+  document.write('<IMG NAME="clock7" SRC="' + image_base + 'blank' + image_type + '" WIDTH="' + ampm_width + '" HEIGHT="' + image_height + '" BORDER="0">');
+  document.write('</A><P>');
+
+  // Finalmente, corremos el script mediante UpdateClock
+  UpdateClock("blank", "blank", "blank", "blank", "blank");
+} // Esto finaliza el chequeo de Netscape 3.0 
+}
+//-->
+</SCRIPT>
+<script language="JavaScript">
+pon_hora();
+</script>
+<br>
+<img src="img/menu/autor.gif" alt="Autor" onMouseOver="window.status='Autor: A-Kristo (Anti)';return true" 
+onMouseOut="window.status='';return true">
+</font>
+</center>
+</body>
+</html>

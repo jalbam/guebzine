@@ -1,0 +1,117 @@
+<html>
+<script language="JavaScript1.2">
+
+function makearray(n) {
+    this.length = n;
+    for(var i = 1; i <= n; i++)
+        this[i] = 0;
+    return this;
+}
+
+hexa = new makearray(16);
+for(var i = 0; i < 10; i++)
+    hexa[i] = i;
+hexa[10]="a"; hexa[11]="b"; hexa[12]="c";
+hexa[13]="d"; hexa[14]="e"; hexa[15]="f";
+
+function hex(i) {
+    if (i < 0)
+        return "00";
+    else if (i > 255)
+        return "ff";
+    else
+        return "" + hexa[Math.floor(i/16)] + hexa[i%16];
+}
+
+function setbgColor(r, g, b) {
+    var hr = hex(r); var hg = hex(g); var hb = hex(b);
+    document.bgColor = "#"+hr+hg+hb;
+}
+
+function fade(sr, sg, sb, er, eg, eb, step) {
+    for(var i = 0; i <= step; i++) {
+        setbgColor(
+        Math.floor(sr * ((step-i)/step) + er * (i/step)),
+        Math.floor(sg * ((step-i)/step) + eg * (i/step)),
+        Math.floor(sb * ((step-i)/step) + eb * (i/step)));
+    }
+}
+
+function fadein() {
+	fade(255,255,255,0,0,0,50);
+}
+
+/* do fadein */
+fadein();
+</script>
+<body bgcolor="#000000">
+<bgsound src="midi/inicio.mid">
+<center>
+<img src="img/logo.gif" alt="GüebZine Nº2">
+</center>
+<br>
+<h4>
+<font color="#579868">
+Aaaaaaaaaaaaaaaaaaaasiiii me gustaaaaaa!!! La acogida que GüebZine ha recibido por todos vosotros
+ha sido mas que immmmprezionante! muchos de vosotros os habeis bajado el numero uno y por eso, desde
+aqui, os damos las gracias a todos vosotros! (;
+<br>
+<br>
+<font color="#113498">
+Lastima de la participacion! ):
+<br>
+Muy poca gente ha colaborado en los concursos, ni en la PuzzleHistoria... espero que en este
+numero os lo tomeis un poco mas 'enserio' y colaboreis, por que si no la revista no se seguira
+haciendo! ):
+<br>
+<font color="#673412">
+Animo! seguro que todos vosotros podeis colaborar en algo de la revista aunque sea enviando
+sugerencias o programas vuestros que quereis que se publiquen ;D
+<br>
+<br>
+<font color="#853246">
+Que hay de nuevo??? pues aparte de un diseño distinto(logos, fondos y midis cambiados) y 
+articulos anteriores que continuan ahora algo mas 'completos', teneis nuevas secciones! :D
+<br>
+Es de destacar el Chat: ahi podreis reuniros todos los chateros con animo de hablar con
+cualquiera sobre lo que sea. Por favor, no floodeeis; no se si me encontrareis en el.
+<br>
+<font color="#435356">
+Tambien es de destacar el "Libro de Visitas" o "GuestBook" que hemos añadido. Se trata de uno de
+esos 'foros' donde podeis dejar mensajes y comunicaros entre unos y otros. Pedios ayuda, 
+contaos chistes, dar sugerencias... lo que querais!!! libertad! xD
+<br>
+<font color="#6660aa">
+Como novedad de ultima hora se halla la nueva seccion de <a href="diseno\index.htm">Diseño</a> creada
+por Erterks. Como es nueva su huvicacion se halla en la seccion de Ocio por el momento. La verdad
+es que vale la pena echarle un vistazo porque promete; esperemos que todos colaboreis en sus
+concursos (:
+<br>
+<font color="#116666">
+Y como no podia faltar... la seccion mas esperada: Hacking!!! Es una seccion tan amplia que abarcara
+temas como el Hacking, Cracking, Virus-Maker, etc... disfrutarla! (no me hago responsable)
+<br>
+<br>
+<br>
+<h5>
+<font color="#324865">
+Si alguien quieres contactar conmigo por internet, ademas del correo electronico
+(<a href="mailto:jalbam@tinet.fut.es">jalbam@tinet.fut.es</a>) puede hacerlo por el IRC:
+ en el IRC Hispano (irc.arrakis.es, por ejemplo), mi nick es A-Kristo.
+<br>
+<br>
+<p align="right">
+<table border=0 cols=1 widht="100%">
+<tr>
+<td>
+<img src="img/penta.gif">
+</td>
+<td>
+<h6>
+<font color="#432537">
+DreamLord (<font color="#730000">Anti o A-Kristo<font color="#432537">)
+</td>
+</tr>
+</table>
+</body>
+</html>

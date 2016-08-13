@@ -1,0 +1,37 @@
+<html>
+<head><title>BannerScript 0.1</title>
+<script language="JavaScript">
+<!--
+// -----------------------------
+// BannerScript 0.1 - 1997
+// Requiere:
+// Netscape 3.0+/Explorer 3.0+
+// -----------------------------
+
+var aBanner = new Array();
+
+aBanner[1]="links/banners/guebzine.gif;midi/editor.mid";
+aBanner[2]="links/banners/emuspir.gif;midi/emu.mid";
+aBanner[3]="links/banners/emucorps.gif;midi/inicio.mid";
+
+var cuantosHay= aBanner.length - 1;
+
+function GenerarBanner(i) {
+var tmp=aBanner[i].split(';');
+var foto="<body background=" +tmp[0] + ">"
+var codigo="<bgsound src=" +tmp[1] + ">" + foto + "</a>";
+
+return(codigo);
+}
+//-->
+</script>
+
+<script LANGUAGE="javascript">
+<!--
+var hoy = new Date();
+var num = (hoy.getSeconds())%cuantosHay+1;
+var anuncio = GenerarBanner(num);
+
+document.write(anuncio);
+//-->
+</script>

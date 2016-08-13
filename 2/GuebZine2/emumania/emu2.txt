@@ -1,0 +1,394 @@
+ _______          ___    ____  _____   ______
+/       |        /   \  /    | \_   |  |   _/
+|   ____|       /     \/     |   |  |  |  |
+|  |____       /   /\    _   |   |  |  |  |
+|   ____|     /   /  \  / |  |   |  |  |  |   ______
+|  |         /   /    \/  |  |   |  |  |  |  |______| 
+|  |____    /   /         |  |   |   \/   |   
+|       |  /   /          |  |   \        /
+\_______| /___/           |__| __ \______/
+                              |__|             DaTaR´97
+ __    __   _____   _     __   __   _____
+/  \  /  | /  _  \ | \   |  | |  | /  _  \     ___  ___
+|   \/   | | |_| | |  \  |  | |  | | |_| |    /  / /  /
+|        | |  _  | |   \ |  | |  | |  _  |   /  / /  /
+|  |\/|  | | | | | | |\ \|  | |  | | | | |   \  \ \  \
+|__|  |__| |_| |_| |_| \____| |__| |_| |_|    \__\ \__\
+ 
+_______________________________________________________
+Revista independiente de emuladores de consolas    Nº2 
+_______________________________________________________
+
+Bienvenido al segundo numero de la revista emu-mania.
+La primera revista española dedicada a los emuladores de
+consolas.
+En esta revista de edicion semanal se trataran temas 
+relacionados con los roms y emuladores que actualmente
+existen.
+
+
+		Indice
+                ------
+
+1.-Analisis de los emuladores + actuales
+2.-Las mejores ROMs
+3.-Trucos & Trucos
+4.-Final
+
+
+		Analisis  
+               ----------
+Vamos a analizar los emuladores de mega drive actuales, 
+(en esta revista solo se analizaran los emuladores
+gratuitos) para ello, las pruebas que haremos para llegar
+al mejor emulador seran las siguientes:
+
+Rapidez---> Fluidez, velocidad, etc (se tendra como base
+            un pentium 100)
+Sonido---> Si tiene sonido o no, tambien se valorara la 
+           calidad.
+
+Compatibilidad---> Un buen emulador a de ser compatible 
+                   con mas del 80% de las roms que hay 
+                   en la red.
+
+*******************
+***Genecyst 0.20***
+*******************
+
+Rapidez---> 9/10
+Sonido---> 7/10
+Compatibilidad--->9/10
+
+Total---> 8/10
+
+Pros:
++Es muy rapido y compatible con la mayoria de las roms
++El interfaz es muy comodo
++Funciona de igual manera bajo win como bajo MS-DOS
+
+Contras:
+-El sonido es abundante, pero suelen ser solo pitidos o
+chasquidos 
+
+****************
+***Genem 0.19***
+****************
+
+Rapidez---> 6/10
+Sonido---> 5/10
+Compatibilidad---> 7/10
+
+Total---> 6/10
+
+Pros:
++Fue el primero y sigue siendo el mejor para mucha gente
+Contras:
+-Requiere un hardware muy potente
+-Tiene poco sonido
+
+****************
+***Kgen 0.31b***
+****************
+
+Rapidez---> 9/10
+Sonido---> 9/10
+Compatibilidad---> 8/10
+
+Total---> 9/10
+
+Pros:
++Es bueno en casi todo
++El interfaz
+Contras:
+-Bajo windows no fona
+-A veces se salta los frames de los parpadeos
+
+******************************
+***Megadrive emulator 0.0.5*** (ya no existe)
+******************************
+
+Rapidez---> 5/10
+Sonido---> 0/10
+Compatibilidad---> 3/10
+
+Total---> 2/10
+
+Pros:
++El sonic funciona
+Contras:
+-Lo demas no 
+
+Esto es todo por esta semana, la proxima semana seran
+analizados los emuladores de master system & Game gear.
+
+------------------------------------------------------
+
+
+		ROMS
+                ----
+En esta seccion se analizaran juegos de los siguientes formatos:
+Gameboy-Nintendo-SNES-Game gear-Master system-Mega drive-PC engine
+
+
+***Kid chamaleon***
+Juego de plataformas en el que un chaval debe ir superando
+niveles a la vez que se pone variados disfrazes.
+
+Consola---> Mega drive
+Tipo---> Plataformas
+Graficos---> 7/10
+Sonido---> 7/10
+Jugabilidad---> 7/10
+
+Total---> 7/10
+
+***Ninja Gaiden 2***
+La segunda parte del juego protagonizado por el ninja Ryu
+
+Consola---> Nintendo N.E.S
+Tipo---> Arcade/plataformas
+Graficos---> 6/10
+Sonido---> 5/10
+Jugabilidad---> 6/10
+ 
+Total---> 6/10
+
+***Altered Beast***
+Juego bastante antiguo en el que los protagonistas se pueden
+trasformar en un lobo, un oso o un dragon. 2 Jugadores
+
+Consola---> System 16
+Tipo---> Arcade
+Graficos---> 7/10
+Sonido---> 6/10
+Jugabilidad---> 8/10
+
+Total---> 7/10
+
+***R·type***
+Uno de los primeros matamarcianos que salieron a la luz.
+
+Consola---> Turbo Grafx 
+Tipo---> Arcade/Matamarcianos
+Graficos---> 7/10
+Sonido---> 6/10
+Jugabilidad---> 6/10
+
+Total---> 6/10
+
+***Sonic 3*** 
+La tercera entrega de las aventuras del erizo azul, esta 
+vez hay otro personaje nuevo, knuckles; tabien se pueden 
+adquirir poderes. 2 jugadores
+
+Consola---> Mega drive 
+Tipo---> Plataformas
+Graficos---> 8/10
+Sonido---> 8/10
+Jugabilidad---> 8/10
+
+Total 8/10
+
+***Sonic & knuckles***
+Una ampliacion para el sonic 3 (que no se puede utilizar).
+Por si solo es un poco pobre en niveles, pero se puede 
+elegir entre el erizo y el rastafari knuckles.
+
+Consola---> Mega drive
+Tipo---> Plataformas
+Graficos---> 8/10
+Sonido---> 8/10
+Jugabilidad---> 8/10
+
+Total 8/10
+
+***Super Mario Allstars***
+Una recopilacion de todos los mario que en su dia 
+salieron para n.e.s., ahora en 16 bits, con mejoras
+graficas y sonoras.
+
+Consola---> SNES
+Tipo---> Plataformas
+Graficos---> 8/10
+Sonido---> 7/10
+Jugabilidad---> 8/10
+
+Total---> 8/10
+
+***Sonic***
+El primero de todos los sonic que salieron al mercado
+para las consolas sega.
+
+Consola---> Master system
+Tipo---> Plataformas
+Graficos---> 7/10
+Sonido---> 6/10
+Jugabilidad---> 7/10
+
+Total---> 7/10
+
+***World heroes 2 jet***
+Torneo de lucha para la pequeña nintendo
+
+Consola---> Game boy
+Tipo---> Lucha
+Graficos---> 6/10
+Sonido---> 5/10
+Jugabilidad---> 6/10
+
+Total---> 6/10
+
+***Megaman X***
+La serie mejor serie del arcade protagonizado por el hombre
+de la aramdura azul
+
+Consola---> SNES
+Tipo---> Arcade/plataformas
+Graficos---> 7/10
+Sonido---> 7/10
+Jugabilidad---> 8/10
+
+Total---> 7/10
+
+***Pirates of the dark water***
+Un juego tipo final fight con muy buenas animaciones y 
+originales decorados. Pueden jugar hasta 2 jugadores.
+
+Consola---> SNES
+Tipo---> Arcade 
+Graficos---> 8/10 
+Sonido---> 8/10
+Jugabilidad---> 8/10
+
+Total---> 8/10
+
+--------------------------------------------------------
+
+
+		Trucos & Trucos
+		----------------
+
+***Fifa international soccer*** SNES
+
+En la pantalla de opciones, prueba a pulsar estas
+combinaciones:
+
+SUPER DEFENSA-----> L,L,L,L,L,R,L
+SUPER ATAQUE------> R,R,R,R,R,L,R
+EQUIPO IDEAL------> A,A,B,B,Y,Y,X,X
+SUPER GOL---------> A,A,A,A,A,Y,Y,Y,Y,Y
+MUROS INVISIBLES--> Y,Y,Y,X,A,A,A,B
+SUPER FRIQUI------> B,A,B,B,B,B,B,B,B,B
+CRAZY BALL--------> X,A,B,Y,Y,B,A,X
+
+
+***Ranger X*** MEGADRIVE
+
+Para poder pasar de nivel en cualquier momento del juego
+haz lo siguiente:
+PAUSA el juego y pulsa ARRIBA y ABAJO 3 veces, luego 
+C,B,A,DERECHA e IZQUIERDA. Oiras que la musica comienza,
+entonces pulsa B y ya esta. Eso si, solo podras hacer esto
+una vez por partida.
+
+
+***Battletoads*** Game boy
+
+Para tener vidas extra presiona A,B,ABAJO y START en la
+pantalla de titulo y tendras 5 vidas extra
+
+
+***Zool*** Mega drive
+
+Para obtener mas vidas y mas tiempo haz lo siguiente:
+Pausa el juego, y sin soltar la tecla pulsa la combinacion
+siguiente: DERECHA,A,ABAJO,A,DERECHA,B,IZQUIERDA,ARRIBA,DERECHA.
+
+
+***The addams family*** Game boy
+
+Cuando veas que te queda poca vida, pulsa los botones
+A,B y SELECT simultanaemente, luego pulsa START.
+
+
+***Aladdin*** Super nintendo
+
+Aqui teneis un serie de trucos para este juego:
+
+En la pantalla de opciones, pulsa con las teclas de 2º 
+jugador: L,R,START,SELECT,X,Y,A y B. Hazlo deprisa para que
+el truco funcione, ahora, en el menu principal apareceran
+dos numeros. Si mientras mantienes pulsados L,R mueves el
+mando direccional, los moveras eligiendo asi nivel y fase.
+Ademas, tendras 99 manzanas.
+
+Passwords:
+
+GENIO,ABU,ALADDIN,REY.
+JAFFAR,ABU,PRINCESA,GENIO.
+GENIO,JAFFAR,ALADDIN,ABU.
+ABU,ALADDIN,GENIO,PRINCESA.
+JAFFAR,PRINCESA,ALADDIN,JAFFAR.
+PRINCESA,JAFFAR,REY,PRINCESA.
+ALADDIN,PRINCESA,ABU,REY.
+
+
+***Chuck rock 2*** Mega drive
+
+Pausa el juego y presiona:
+B,A,DERECHA,A,C,ARRIBA,ABAJO Y A. Vuelve a pausar el juego,
+ahora si aprietas A Y DERECHA pasaras de fase o si aprietas
+A y ARRIBA pasaras el nivel entero.
+
+
+***Ecco The Dolphin 1*** Mega drive
+
+Ser invencible:
+
+Empieza una nueva partida y antes de salir por el lugar
+que conduce al primer nivel, pulsa los botones A y START.
+La pantalla se "esfumara". Luego aparecera el juego pausado,
+despausalo y si lo has hecho bien, seras invencible.
+
+Oxigeno infinito:
+
+Introduce este password para tener oxigeno infinito: LIFEFISH
+
+
+***Rocket knight adventures*** Mega Drive
+
+Cuando aparezca la pantalla de titulo, pulsa ARRIBA e IZQUIERDA
+10 veces. Comienza a jugar y cuando creas que es el momento
+apropiado, pausa y pulsa C,B,B,A,C y B... SORPRESA!!!
+
+
+***Wiz´n´liz***
+
+Pausa el juego y pulsa A,B y C al mismo tiempo. Tendras una 
+divertida sorpresa.
+
+
+--------------------------------------------------------------
+
+				FIN
+				----
+Esto a sido el numero 2 de la emu-mania, espero que te 
+haya gustado, pero que te guste menos que la de la proxima 
+semana. ;))) 
+
+
+Colaboradores: Pts 
+
+Aqui puedes estar tambien tu si quieres, solo tienes que 
+ponerte en contacto conmigo y ayudarme en la realizacion de 
+emu-mania, podras encontrarme en el canal #emuladores 
+del irc hispano. 
+
+
+
+						DaTaR´97
+
+bye
+
+					

@@ -1,0 +1,91 @@
+<html>
+<body background="img/bg/links.gif">
+<bgsound src="midi/links.mid">
+<center>
+<img src="img/logos/links.gif" alt="Links">
+</center>
+<font color="#ff0000">
+Aqui se mostraran los banners linkados hacia vuestras paginas. Solo teneis que enviar un banner
+pequeño (90x32, 45Kb max.) o uno grande (400x80, 50Kb max.), y una url hacia donde enlazarlo.
+Todo a <a href="mailto:jalbam@tinet.fut.es">jalbam@tinet.fut.es</a>.
+<br>
+<font color="#ffff00">
+Los banners estan ordenados alfabeticamente. Ademas, teneis un banner 'del dia', que se escoge
+aleatorio cuando la pagina carga. Gracias a BannerScript 0.1 de NetMania (;
+<br>
+<br>
+<br>
+<br>
+<center>
+<table border=1 bordercolor="#ff0000">
+<tr>
+<td><center><b><font color="#ad7373">Banner del Dia</b></center></td>
+</tr>
+<tr>
+<td>
+<script language="JavaScript">
+<!--
+// -----------------------------
+// BannerScript 0.1 - 1997
+// Requiere:
+// Netscape 3.0+/Explorer 3.0+
+// -----------------------------
+
+var aBanner = new Array();
+
+aBanner[1]="links/banners/guebzine.gif;http://www.emumania.com/guebzine";
+aBanner[2]="links/banners/emuspir.gif;http://www.emumaniOOO.com/guebzine";
+aBanner[3]="links/banners/emucorps.gif;http://www.AMUKORZ.com/guebzine";
+
+mensajillo="Banner"
+
+var cuantosHay= aBanner.length - 1;
+
+function GenerarBanner(i) {
+var tmp=aBanner[i].split(';');
+var foto="<img src=" +tmp[0] + " alt=" + mensajillo + ">"
+var codigo="<a href=" +tmp[1] + ">" + foto + "</a>";
+
+return(codigo);
+}
+//-->
+</script>
+
+<script LANGUAGE="javascript">
+<!--
+var hoy = new Date();
+var num = (hoy.getSeconds())%cuantosHay+1;
+var anuncio = GenerarBanner(num);
+
+document.write(anuncio);
+//-->
+</script>
+</td>
+</tr>
+</table>
+
+
+
+
+<br>
+<br>
+<img src="links/banners/guebzine.gif" alt="GüebZine" border=0>
+<br>
+<img src="links/banners/emuspir.gif" alt="EmuSpirit" border=0>
+<br>
+<img src="links/banners/emucorps.gif" alt="EmuCorps" border=0>
+<br>
+<br>
+<table>
+<tr>
+<td>
+<img src="links/banners/minis/guebzine.gif" alt="GüebZine" border=0>
+</td>
+<td>
+<img src="links/banners/minis/emucorps.gif" alt="EmuCorps" border=0>
+</td>
+</tr>
+</table>
+</center>
+</body>
+</html>

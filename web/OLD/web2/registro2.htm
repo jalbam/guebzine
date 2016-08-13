@@ -1,0 +1,61 @@
+<html>
+<head>
+<title>Registro GüebZine</title>
+
+<script language="JavaScript">
+<!--
+  function EnviarCorreo() {
+    if (document.forms[0].email.value == "") {
+       alert("E-Mail sin rellenar!");
+       return false;
+    }
+    if (document.forms[0].nombre.value == "") {
+       alert("Falta el nombre!");
+       return false;
+    }
+   
+    
+// Construir un URL tipo mailto: con todos los elementos:
+    document.forms[0].action = "mailto:jalbam@tinet.fut.es" + "?E-Mail=" +
+                    document.forms[0].email.value +
+                    "?Nombre=" +
+                    document.forms[0].nombre.value
+    return true;   
+  }
+//-->
+</script>
+</head>
+<body bgcolor="#000000">
+<basefont size=3>
+<table border=0>
+<tr>
+<td>
+<h2><font color="#80e380">Registro <font color="#80e3aa">GüebZine</h2>
+</td>
+<td>
+<font color="#aa0022"><h6><blink>A-Kristo</blink></h6></p align>
+</td>
+</tr>
+</table>
+<hr>
+<font color="#cd989c">
+Por favor, rellena el formulario detalladamente y pulsa <b>Enviar correo</b>.
+<form method="post" enctype="text/plain">
+<table border=0>
+<tr>
+<td align="right"><b><font color="#aa8a22">Tu E-Mail:</b></td>
+<td><input type="text" name="email" size=23>
+</td>
+</tr>
+<tr>
+<td align="right"><b><font color="#aa8a39">Nombre y/o Nick:</b></td>
+<td><input type="text" name="nombre" size=30></td>
+</tr>
+</table>
+<hr>
+<center>
+<input type="submit" value="Enviar correo" onClick="EnviarCorreo()">
+</form>
+</center>
+</body>
+</html>

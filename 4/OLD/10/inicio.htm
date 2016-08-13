@@ -1,0 +1,96 @@
+<html>
+<script language="JavaScript1.2">
+
+function makearray(n) {
+    this.length = n;
+    for(var i = 1; i <= n; i++)
+        this[i] = 0;
+    return this;
+}
+
+hexa = new makearray(16);
+for(var i = 0; i < 10; i++)
+    hexa[i] = i;
+hexa[10]="a"; hexa[11]="b"; hexa[12]="c";
+hexa[13]="d"; hexa[14]="e"; hexa[15]="f";
+
+function hex(i) {
+    if (i < 0)
+        return "00";
+    else if (i > 255)
+        return "ff";
+    else
+        return "" + hexa[Math.floor(i/16)] + hexa[i%16];
+}
+
+function setbgColor(r, g, b) {
+    var hr = hex(r); var hg = hex(g); var hb = hex(b);
+    document.bgColor = "#"+hr+hg+hb;
+}
+
+function fade(sr, sg, sb, er, eg, eb, step) {
+    for(var i = 0; i <= step; i++) {
+        setbgColor(
+        Math.floor(sr * ((step-i)/step) + er * (i/step)),
+        Math.floor(sg * ((step-i)/step) + eg * (i/step)),
+        Math.floor(sb * ((step-i)/step) + eb * (i/step)));
+    }
+}
+
+function fadein() {
+	fade(255,255,255,0,0,0,50);
+}
+
+/* do fadein */
+fadein();
+</script>
+<body  bgcolor="#000000" vlink="22aa80" link="#1acadb">
+<bgsound src="midi/inicio.mid">
+<center>
+<img src="img/logo.gif" alt="GüebZine No.4">
+</center>
+<br>
+<h4>
+<font color="#75aa89">
+Y GüebZine mejora, cada vez mas. Gracias, como no, a todos vosotros: los lectores.
+Muchisimas gracias por leernos, criticarnos o prestarnos sugerencias, por ofreceros para
+colaborar, por enviar vuestro software o participar en algun concurso... por lo que sea, por
+estar ahi! ;D
+<br>
+<br>
+<font color="#aa1123">
+Como podeis observar se ha vueltro a introducir una mejora notable en cuanto a diseño. Esta vez,
+para no variar, se han mejorado todavia mas los menus.
+<br>
+La seccion 'Hacking' se encuentra ahora en 'Underground' junto a sus otras secciones 'hermanas'.
+Algo parecido sucede con la seccion 'Diseño' que apartir de ahora se aloja en 'Diseño' con un
+'Curso de HTML'! y algo mas (;
+<br>
+<font color="#e7b6ec">
+La nueva seccion por excelencia es, sin duda alguna, la de 'IRC'; que que se encuentra en ella?
+Pues un repasillo por este mundillo: podras aprender con el 'Curso IRC', informarte con
+'Mi Primer Script (mIRC)', saciar tu curiosidad con la seccion 'Canales' donde se comentan
+muchos de los canales mas visitados del IRC (IRC Hispano mayoritariamente), con entrevistas a los
+Admins, y muchisimo mas! ;D
+<h5>
+<font color="#4865aa">
+Si alguien quisiera contactar conmigo por internet, ademas del correo electronico
+(<a href="mailto:jalbam@tinet.fut.es">jalbam@tinet.fut.es</a>) puede hacerlo por el IRC:
+ en el IRC Hispano (irc.arrakis.es, por ejemplo), mi nick es A-Kristo. Tambien teneis el Correo
+Tradicional, todo lo encontrareis en la pagina de <a href="contacto.htm">Contacto</a>.
+<br>
+<p align="right">
+<table border=0 cols=1 widht="100%">
+<tr>
+<td>
+<img src="img/penta.gif" alt="Autor">
+</td>
+<td>
+<h6>
+<font color="#aa4457">
+DreamLord <font color="#aa44cc">(<font color="#9a0000">Anti o A-Kristo<font color="#aa44cc">)
+</td>
+</tr>
+</table>
+</body>
+</html>

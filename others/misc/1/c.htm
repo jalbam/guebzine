@@ -1,0 +1,85 @@
+<html>
+<title>Curso de C</title>
+<body bgcolor="#aadd55">
+<font color="#734460">
+<h1>
+<u>
+<center>
+Curso de C
+</center>
+</u>
+<h4>
+<font color="#ff0099">
+Esta es la primera entrega del curso de C que a medida que vaya progresando desea ser mas 
+completo, de modo que os rogamos que nos disculpeis si os puede parecer incompleto a alguno de
+vosotros. Gracias.
+<font color="#558899">
+<br>
+Los ejemplos los encontrareis en la carpeta <a href="c/ejemplos/" target="ejemplos">\C\EJEMPLOS\
+</a>.
+<br>
+<br>
+<i><font color="#934756">Comencemos:</a></i>
+<br>
+<br>
+<font color="#a76aec">
+Para empezar nosotros utilizaremos el Turbo C como entorno de trabajo. Las aplicaciones 
+funcionaran bajo el S.O. DOS.
+<br>
+<br>
+En C todas las funciones deben escribirse en minuscula, salvo algunas excepciones, que ya
+iremos viendo mas adelante.
+<br>
+Todos sus comandos estan definidos en <i>Librerias</i>, y para que estos funcionen, es necesario
+cargarlas en memoria; de lo contrario los comandos no se encontraran.
+<br>
+La forma de cargar en memoria una libreria es declarandola al principio de todo el programa.
+<br>
+<br>
+<font color="#0faaf0">
+<b>
+Veamos este ejemplo incluido en EJEMPLO1.C:
+</b>
+<br>
+<font color="#ff0000">
+<pre>
+#include < stdio.h >
+#include < conio.h >
+<font color="#ff00aa">
+/* Comentario interno. Programa EJEMPLO1.C */
+<font color="#ff0000">
+main() <font color="#ff00aa">/* inicia el 'cuerpo' del programa donde lo escribiremos */
+<font color="#ff0000">{ <font color="#ff00aa">/* Señala su lugar de apertura (MAIN) */
+<font color="#ff0000">clrscr(); <font color="#ff00aa">/* Limpia la pantalla: CLeaR SCReen. Similar al CLS del DOS y Basic. */
+<font color="#ff0000">printf("Hola Mundo!!!"); <font color="#ff00aa">/* Muestra el mensaje que esta entre comillas en pantalla */
+<font color="#ff0000">getch();<font color="#ff00aa"> /* Realiza una pausa hasta que se pulse una tecla */
+<font color="#ff0000">}<font color="#ff00aa"> /* Finaliza MAIN y el programa ya que no hay mas debajo */
+</pre>
+<br>
+<font color="#0faaf0">
+Fijemosnos que los comentarios internos se abren con <font color="#ff0000">/*
+<font color="#0faaf0"> y se cierran con <font color="#ff0000"> */<font color="#0faaf0">.
+<br>
+Las librerias a declarar son <font color="#ff0000">stdio.h<font color="#0faaf0"> y 
+<font color="#ff0000">conio.h<font color="#0faaf0">. Es de destacar su extension: 
+<font color="#ff0000">.h<font color="#0faaf0">. Los espacios que se han añadido entre los
+simbolos<font color="#ff0000"> < <font color="#0faaf0">y<font color="#ff0000"> >
+<font color="#0faaf0"> que aguardan el nombre de las  librerias son inexistentes, ya que en 
+lenguaje HTML no he encontrado otra forma de que se mostrase texto en pantalla comprendido 
+entre esos caracteres a causa de como este esta estructurado. No los pongais.
+<br>
+A continuacion, se abre el 'menu' MAIN, que es el <i>standard</i> que mas es utilizado, y sobre
+todo en estos programillas tan sencillos.
+<br>
+Luego borramos la pantalla e imprimos el texto 'Hola Mundo!!!'. Se realiza una pausa para que
+el usuario pueda ver el mensaje antes de que se vuelva al Turbo C.
+<br>
+Para compilarlo y ejecutarlo utilizamos las teclas <font color="#ff0000">Control + F9
+<font color="#0faaf0">.
+<br>
+<br>
+<font color="#0000ff">
+Por ahora nada mas. El proximo numero iremos mas enserio y directos para enseñaros a utilizar
+variables, bucles... Hasta luego! :D
+</body>
+</html>

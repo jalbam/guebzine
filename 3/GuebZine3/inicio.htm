@@ -1,0 +1,105 @@
+<html>
+<script language="JavaScript1.2">
+
+function makearray(n) {
+    this.length = n;
+    for(var i = 1; i <= n; i++)
+        this[i] = 0;
+    return this;
+}
+
+hexa = new makearray(16);
+for(var i = 0; i < 10; i++)
+    hexa[i] = i;
+hexa[10]="a"; hexa[11]="b"; hexa[12]="c";
+hexa[13]="d"; hexa[14]="e"; hexa[15]="f";
+
+function hex(i) {
+    if (i < 0)
+        return "00";
+    else if (i > 255)
+        return "ff";
+    else
+        return "" + hexa[Math.floor(i/16)] + hexa[i%16];
+}
+
+function setbgColor(r, g, b) {
+    var hr = hex(r); var hg = hex(g); var hb = hex(b);
+    document.bgColor = "#"+hr+hg+hb;
+}
+
+function fade(sr, sg, sb, er, eg, eb, step) {
+    for(var i = 0; i <= step; i++) {
+        setbgColor(
+        Math.floor(sr * ((step-i)/step) + er * (i/step)),
+        Math.floor(sg * ((step-i)/step) + eg * (i/step)),
+        Math.floor(sb * ((step-i)/step) + eb * (i/step)));
+    }
+}
+
+function fadein() {
+	fade(255,255,255,0,0,0,50);
+}
+
+/* do fadein */
+fadein();
+</script>
+<body  bgcolor="#000000" vlink="#440000" link="880022">
+<bgsound src="midi/inicio.mid">
+<center>
+<img src="img/logo.gif" alt="GüebZine No.3">
+</center>
+<br>
+<h4>
+<font color="#5798aa">
+En esta tercera entrega comenzamos mas fuerte que nunca. Nuevo diseño en la pagina: menus mas
+'comodos de ver', fondos guapos, mejores midis...
+<br>
+Y es que la revista mejora!!! y todo, como no, gracias a vosotros (:
+<br>
+<br>
+<font color="#561123">
+No hay secciones nuevas, pero hay muchos cambios en ellas!!! Espero que las disfruteis al maximo
+tanto como yo haciendolas (;
+<br>
+<font color="#be7e4c">
+He de dar las gracias a todas las personas que han colaborado directa o indirectamente con algun
+aspecto de la revista. Muchos de vosotros habeis confiado en ella, la habeis leeido, habeis
+participado en algun concurso, habeis enviado criticas o sugerencias, etc. Y por ello os mereceis
+un gran aplauso y lo unico que puedo decir es 'GRACIAS A TODOS' :D
+<h5>
+<font color="#486532">
+Si alguien quiere contactar conmigo por internet, ademas del correo electronico
+(<a href="mailto:jalbam@tinet.fut.es">jalbam@tinet.fut.es</a>) puede hacerlo por el IRC:
+ en el IRC Hispano (irc.arrakis.es, por ejemplo), mi nick es A-Kristo. Tambien teneis el Correo
+Tradicional, todo lo encontrareis en la pagina de <a href="contacto.htm">Contacto</a>.
+<br>
+<br>
+<font color="#11ff00">Recuerda: <font color="#aadd00">la revista se ve mejor con Internet Explorer, resolucion 800x600 a 24bits color
+y pantalla completa (<font color="#11ff00">pulsa F11<font color="#aadd00">).
+<br>
+<p align="right">
+<table border=0 cols=3 widht="100%">
+<tr>
+<td>
+<img src="img/penta.gif" alt="Autor">
+</td>
+<td>
+<applet code=AnimText.class width=95 height=25>
+<PARAM NAME=text VALUE=" DreamLord ">
+<PARAM NAME=type VALUE=TWISTER>
+<PARAM NAME=bgColor VALUE=06:08:00>
+<PARAM NAME=fgColor VALUE=120:60:00>
+<PARAM NAME=style VALUE=bold>
+<PARAM NAME=min VALUE=5>
+<PARAM NAME=max VALUE=18><BR>
+</applet>
+</td>
+<td>
+<h6>
+<font color="#254337"> (<font color="#9a0000">Anti o A-Kristo<font color="#254337">)
+</td>
+</tr>
+</table>
+</body>
+</html>

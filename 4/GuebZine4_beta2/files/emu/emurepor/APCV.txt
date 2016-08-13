@@ -1,0 +1,69 @@
+ASOCIACION PRO-CONSERVACION DE VIDEOJUEGOS (APVC)
+
+
+Concientes de que los VideoJuegos (de ahora en adelante denominados VJ)
+son patrimonio historico virtual de la Humanidad y que debido al auge de
+emuladores de maquinas nuevas esta haciendo que nos ataquen y se pierda 
+el objetivo de la emulación, nos hemos unido en una Asociacion 
+Pro-Conservación de VideoJuegos (De ahora en adelante denominada APVC)
+con el animo de intercambiar ROMS que permitan la conservación de juegos
+antiguos.
+
+REGLAS PARA PERTENECER AL APVC
+
+1. Tener una cuenta de uso regular a Internet.
+2. Tener una cuenta de Correo en un servidor POP (Es decir, no se aceptan
+e-mails Web) Salvo que permitan la recepción de archivos de mas de 300 KB.
+3. Ser consciente de que la emulación es un derecho y no un privilegio.
+4. Conocer las consolas y sistemas antes de N64 y PSX.
+
+Si aceptas esto y la forma de funcionamiento, escribe al OP con un
+mensaje de aceptación. 
+
+FUNCIONAMIENTO DEL APVC
+
+Dentro del APVC existiran operadores encargados de el envio y clasificación
+de las ROMS. Inicialmente el OP sera Goyo (Quien tambien usa el nick Gotham)
+Luego de que se determine la cantidad de participantes, se procedera a
+establecer los otros operadores.
+
+Email del operador: midorada@hotmail.com
+
+El sistema operara asi:
+
+1. Inicialmente se intercambiaran ROMS de NES y SNES. Esto como homenaje a las
+primeras consolas caseras de alto rendimiento.
+
+2. Cada participante, al enviar el mensaje de aceptacion, se le avisara
+cuando debera enviar al OP, un listado de las ROMS que posea 
+Especificando:
+
+- Nombre del Juego
+- Consola a la que pertenece
+- Emulador con el que se ejecuta
+- Tamaño en KB o B (Empaquetado en ZIP)
+
+Se debe enviar solo el listado de Roms que esten emuladas al 100%. Favor no
+enviar listados de ROMS a medias.
+
+3. No se deben enviar ROMS trucadas o alteradas, salvo que el participante
+de una razon logica para incluirlo como el hecho de estar traducida o sea una
+ROM exclusiva para emuladores.
+
+4. Luego de que el op reciba los listados, se compilara en uno solo y se enviara
+a todos los participantes que enviaran solicitudes de los roms que deseen.
+
+5. El envio se hara 2 o 3 veces por semana (dependiendo de la cantidad de OPS)
+Los archivos se enviaran en bloques de hasta 300 KB (Zipeados) con el animo 
+de no consumir el ancho de banda de los usuarios.
+
+6. Gracias a YANN, se ha decidido tomar el canal #roms2000 como una base de
+operaciones virtual, en el podras encontrar ayuda sobre el APCV.
+En emails proximos se ampliara esta información.
+
+Si aceptas envia al op tu mensaje de aceptación.
+
+
+
+
+

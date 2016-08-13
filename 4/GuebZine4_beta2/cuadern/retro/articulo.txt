@@ -1,0 +1,149 @@
+ 	En estos tiempos que nos ha tocado vivir es plena expansion de 
+tecnologia, es increible ver como los microprocesadores se suceden con un 
+animo de superacion increible en un tiempo record, con su hardware 
+necesario para que funcione correctamente (memorias y placas base mas 
+rapidas con bus a velocidad increible).
+
+	toda esta apologia del avance tecnologico seria perfecta si la 
+imformatica no fuera esclava de si misma en un afan de superacion que 
+implica el aparente estado de insatisfaccion personal en el que se 
+encuentra en usuario medio, e incluso el alto cuando ve que su maquina 
+esta OBSOLETA, la misma maquina con la que ha pasado muchisimas horas de 
+entretenimiento, trabajo, malos y buenos ratos pero sobre todo UTILES. 
+?Que pasa que mi maquina ya no puede realizar esos calculos? que ni 
+siquiera es capaz de arrancar una base de datos....:} (me lo expliquen)
+y es que todo un PENTIUM 100 ya esta obsoleto para una gran infindad de 
+programas, y es una maquina "LENTA", aunque me fastidia mucho tener que 
+decir que es una maquina "lenta" cuando me gustaria que vierais juegos 
+rulando en maquinas de 8 bits como el c64 en Programas con multiscroll 
+mucho mas de 8 sprites en pantalla 16 colores y con un sonido generado 
+por el el chip sid ( contres canales chip y uno mas digital) y funcionando
+de manera armonica como por ejemplo titulos como : 
+        
+	IO, HAWKEYE, ARMALYTE (WHAW) ,R-TYPE ,etc................. 
+        JODER QUE BUENOS TIEMPOS ;)))
+        
+	
+	Claro que es necesario que las maquinas sean mas potentes, 
+puesto que los algoritmos de calculo en procesos de render, y demas 
+necesidades las requiere, mas poligonos.. mejor resolucion .. mas 
+colores..etc... 
+	
+	PERO...... creo recordar que desde que tenia mi COMMODORE 64 de 8 bits
+(poneros en vuestra situacion si teniais ordenador de 8 bits espectrum, 
+msx...) tambien sufrio cambios en su software:
+
+	Juegos: (2d) GALAGA   -no scroll
+			      -2 colores 
+			      -1 canal de sonido (chip)
+		     pasa a: -------------------------
+			
+		     ARMALYTE -multiscroll
+			      -16 colores
+			      -Mas de 10 sprites en pantalla  en formato
+			       multicolor 
+			      -sonido en 3 canales (4 en algun juego 
+			       utilizando el filtro digital Savage por ej)
+			      -todo ello ejecutado de manera armonica 
+		
+
+		 (3d) Titulos como DARK SIDE, THE SENTINEL o CHUCK's YEAGER 	
+		      con espacios de libre movimiento generados en 
+		      tiempo real a una resolucion aceptable con una
+		      considerable cantidad de poligonos, en simuladores, 
+		      video aventuras, etc.. 
+	
+
+	Utilidades:
+
+		     TEXEDIT	-Procesador de texto simple en basic 
+				-impresion de caracteres simples 
+
+		     pasa a:    ---------------------------
+
+		     GEOS	-Procesador de texto, con sistema 
+				 operativo de VENTANAS propio con 
+				 muchisimas utilidades y optimizacion 
+			         de impresion (resultados INCREIBLES en 
+				 cuanto a resolucion y calidad de impresion,
+				 en una impresora matricial de 9 agujas) 
+		       	         alternando imagenes y texto.
+	
+	Musica:      PLAY:      -programa de interpretacion de sonidos 
+				 chip en un solo canal. con pocos instrumentos
+				 (formas de onda)
+
+		     pasa a:	---------------------------	
+	             
+
+		     TRACKERS y COMPOSERS
+
+				-programas de composicion via midi 
+				 (utilizado por grupos como mecano)
+				-trackers de varias pistas incluso 
+				 utilizando SAMPLES si !!SAMPLES!!
+				 y con capacidad de definir la forma de 
+				 onda en sonidos chip.
+			         musicas en juegos como la de turbo outrum 
+				 yee.. ca ca ca ca cammonnn ...;DDD
+
+	
+	Todo esto solo viene a reflejar el esfuerzo realizado por los 
+programadores de la epoca al tener que explotar las caracteristicas de un 
+ordenador en sistema de unico formato y sin utilizar expansiones nada mas 
+que en casos puntuales. No he visto ningun programa que "estruje" las 
+posibilidades de una maquina hasta ese nivel(incluso deshabilitar la rom 
+para programarla.. increible).
+  
+	En un pc  lo unico que consigo ver es (minimun requeriments 
+..PENTIUN!"7!"7 targeta 3d"77"$"3 cdrom !"7!"7 etc....). aunque tambien 
+he de comentar que no seria justo decir que todo es malo tambien hay 
+progamadores que se lo curran y mucho,  ole por ellos 
+
+	Aun sigo utilizando mi c64 (nunca falla) pero el pc lo he tenido 
+que "ampliar" mas de 3 veces y creo que proximamente sera la proxima. 
+puesto que realizo trabajos en 3d y eso si es calculo a lo vestia,
+
+	 Y es que hemos tenido que esperar a que vengan estos chicos,
+programadores a los que les estoy infinitamente agradecido, (puesto que
+esta publicacion y todo este movimiento no se habria relizado si no es
+gracias a ellos ).Para al final poder utilizar un c64 (por ejemplo) en mi
+pc, disponiendo en una tacada de todo el software que habia tardado tanto
+en recopilar. !!!!!! INCREIBLE Y MUY SATISFACTORIO!!!!!!!!. 
+
+
+
+	Planteo unas preguntas: 
+
+1- Donde esta el problema ...en el microprocesador, o el el algoritmo de 
+   calculo ... :}?
+
+2- Tiene algo que ver el algoritmo con las necesidades de venta de  los 
+   fabricantes de hardware y software?
+
+3- Has pensado si realmente... necesitas ampliar tu equipo ? 
+
+	 
+4- Si lo amplias ... cuanto tardaras en sentir que necesitas ampliarlo de 
+   nuevo?
+  
+
+	
+
+		RENOVARSE O ........???MORIR???......
+
+
+
+	
+	Siento mucho el no poder utilizar acentos en el texto, pero a 
+buen entendedor...    Un saludo a todas las personas relacionadas 
+con el mundo de la emulacion, LIM, PTS, FOGUE, LA GENTE CD GUEBZINE , Y 
+DEMAS ....
+
+			---((([[[ALX]]])))--- 
+   			   fa2almaa@uco.es
+ 	
+	
+	
+
+

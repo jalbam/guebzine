@@ -1,0 +1,267 @@
+ _______          ___    ____  _____   ______
+/       |        /   \  /    | \_   |  |   _/
+|   ____|       /     \/     |   |  |  |  |
+|  |____       /   /\    _   |   |  |  |  |
+|   ____|     /   /  \  / |  |   |  |  |  |   ______
+|  |         /   /    \/  |  |   |  |  |  |  |______| 
+|  |____    /   /         |  |   |   \/   |   
+|       |  /   /          |  |   \        /
+\_______| /___/           |__| __ \______/
+                              |__|             DaTaR´97
+ __    __   _____   _     __   __   _____
+/  \  /  | /  _  \ | \   |  | |  | /  _  \     ___  ___
+|   \/   | | |_| | |  \  |  | |  | | |_| |    /  / /  /
+|        | |  _  | |   \ |  | |  | |  _  |   /  / /  /
+|  |\/|  | | | | | | |\ \|  | |  | | | | |   \  \ \  \
+|__|  |__| |_| |_| |_| \____| |__| |_| |_|    \__\ \__\
+ 
+_______________________________________________________
+Revista independiente de emuladores de consolas    Nº1 
+_______________________________________________________
+          
+
+Bienvenido al primer numero de la revista emu-mania.
+La primera revista española dedicada a los emuladores de
+consolas.
+En esta revista de edicion semanal se trataran temas 
+relacionados con los roms y emuladores que actualmente
+existen.
+
+
+Indice
+------
+
+1.-Analisis de los emuladores + actuales
+2.-Las mejores ROMS
+3.-Trucos & Trucos
+4.-Final de la revista
+
+
+			Analisis
+                       ----------
+Vamos a analizar los emuladores de consola actuales.
+En este primer numero el analisis solo sera en SNES. Las 
+pruebas que haremos a los emus seran las siguientes:
+
+Rapidez---> Velocidad (se tendra como base un p100, que 
+            es ya el minimo para poder rular con los emus)
+Sonido----> Si tiene o no; tambien cuenta la calidad
+
+Compatibilidad---> Algo muy inportante. De nada vale un 
+                   super emulador si no se puede utilizar
+                   ninguna rom en el
+
+
+***ESNES 0.14***
+
+Rapidez ---> 7/10
+Sonido ---> 7/10
+Compatibilidad ---> 8/10
+
+Total ---> 7/10
+
+
+***NLKSNES 0.11(d)***
+
+Rapidez ---> 8/10
+Sonido ---> 0/10
+Compatibilidad ---> 6/10
+
+Total ---> 5/10
+
+
+***SNES9X 0.131***
+
+Rapidez ---> 8/10
+Sonido ---> 9/10
+Compatibilidad ---> 9/10
+  
+Total ---> 9/10
+
+
+***SNES9X 0.10*** Win95
+
+Rapidez ---> 6/10
+Sonido ---> 9/10
+Compatibilidad ---> 9/10
+ 
+Total ---> 8/10
+
+
+***SNES9X 0.0.1.5***
+
+Rapidez ---> 7/10
+Sonido ---> 0/10
+Compatibilidad ---> 8/10
+
+Total ---> 5/10
+
+
+Esto es todo por hoy, la proxima semana seran
+analizados los emus de Mega-Drive (genesis)
+
+------------------------------------------------
+
+
+		ROMS
+		----
+En esta seccion se analizaran juegos de los siguientes formatos:
+Gameboy-Nintendo-SNES-Game gear-Master system-Mega drive-PC engine
+
+
+***Sonic***
+Buen juego de plataformas. Para un jugador
+
+Consola---> Mega drive
+Tipo---> Plataformas
+Graficos---> 7/10
+Sonido---> 6/10
+Jugabilidad---> 9/10
+
+Total---> 7/10
+
+***Sonic 2***
+Otro juego protagonizado por el erizo azul. Pueden jugar hasta 
+2 jugadores.
+
+Consola---> Mega drive
+Tipo---> Plataformas
+Graficos---> 8/10
+Sonido---> 7/10
+Jugabilidad---> 9/10
+
+Total---> 8/10
+
+***Super mario bros***
+Acaso alguien no lo conoce?. 2 jugador
+
+Consola---> Nintendo
+Tipo---> Plataformas
+Graficos---> 5/10
+Sonido---> 6/10
+Jugabilidad---> 8/10
+
+Total---> 6/10
+
+***Super mario world***
+Super mario y su aventura en los 16 bits. 2 jugadores
+
+Consola---> SNES
+Tipo---> Plataformas
+Graficos---> 7/10
+Sonido---> 8/10
+Jugabilidad--->8/10
+
+Total---> 8/10
+
+***Super mario land 2***
+La segunda parte del mejor juego de GB
+
+Consola---> Game boy
+Tipo---> Plataformas
+Graficos---> 7/10
+Sonido---> 6/10
+Jugabilidad--->/7/10
+
+Total---> 7/10
+
+***Cooryon***
+Excelente arcade de dragones
+
+Consola---> Turbo grafx
+Tipo---> Arcade matamarcianos
+Graficos---> 8/10
+Sonido---> 7/10
+Jugabilidad--->7/10
+
+Total---> 7/10
+
+***Greendog***
+Plataformas en la pequeña sega
+
+Consola---> Game gear
+Tipo---> Plataformas
+Graficos---> 6/10
+Sonido--->7/10
+Jugabilidad--->6/10
+
+Total---> 6/10
+
+***Wonderboy in monster land***
+Mi juego favorito. Super-adictivo
+
+Consola---> Master sytem
+Tipo---> Plataformas/Aventuras
+Graficos---> 8/10
+Sonido---> 7/10
+Jugabilidad---> 8/10
+
+Total---> 8/10
+
+
+---------------------------------------------------
+
+		Trucos & Trucos
+		---------------
+
+***Prince of persia*** SNES
+
+Passwords
+
+Fase 2: JQUGAAZ
+Fase 4: 463EWAS
+Fase 6: 4K25WAL
+Fase 8: 4RN6WWW
+Fase 10: 455VAAL
+Fase 12: IPSLWAZ
+Fase 14: RWHVWA4
+Fase 16: BBFFAAP
+Fase 18: JQ65JAA
+Fase 20: J4VO6A4
+
+
+***Tiny toon*** SNES
+
+Para poder elegir la fase de bonus que hay al final de cada
+pantalla, introduce este password:
+
+ELMYRA, SHIRLEY y CALAMITY COYOTE
+
+ahora puedes elegir cualquiera de los juegos.
+
+
+***Turrican*** Game Boy
+
+Para poseer invulnerabilidad introduce esta secuencia en
+la pantalla de titulo: A,B,B,A,B,A,A,B,A,A,B,A,A. Si lo has
+hecho bien, aparecera la palabra CHEAT en el lugar de START
+
+
+***PREDATOR 2*** Master system***
+
+Passwords
+
+Fase 2: SPOCGURD
+Fase 3: ROTADERP
+Fase 4: SEGATSOH
+Fase 5: NAGIRRAH
+Fase 6: LAICIFFO
+
+-------------------------------------------------------
+
+
+			 FIN
+                        -----
+Bueno, esto ha sido todo. Espero que te haya gustado. Hasta
+la proxima semana!!
+
+
+Colaboradores: Este apartado esta vacio, aqui puedes estar
+tu si quieres, solo tienes que ponerte en contacto conmigo
+y ayudarme en la realizacion de emu-mania, podras encontrarme
+en el canal #emuladores del irc hispano. 
+
+
+					DaTaR´97
+
+bye

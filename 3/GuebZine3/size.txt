@@ -1,0 +1,5 @@
+Size Pics-Menu: 100x13
+Size Logos Sections: 320x80
+Size Pics Emu-Menu: 100x25
+Size Pics Emu-Secciones: 300x80
+Size Pics Concursos-Secciones: 300x80
