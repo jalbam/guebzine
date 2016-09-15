@@ -8,6 +8,9 @@ Version: 1st, 2nd, 3rd and 4th (beta) issues
 - Date: 1998 to 2000 or 2001 (approximately)
 
 
+![ScreenShot](screenshot.jpg)
+
+
 Description
 
 Webzine which I started in 1998 (third and last official issue was released in 1999), creating it with HTML and a little bit of JavaScript. It was hosted on EmuM@nia (emumania.com) which was one of the most famous Spanish emulation web sites before it disappeared in 2002. It had different contributors (DaTaR, Erterks, ARROW, [Lolo], CHIP, Scumnok, [[[ALX]]]...) who wrote some sections and/or helped in some way.
