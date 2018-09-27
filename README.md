@@ -15,7 +15,7 @@ Description
 
 Webzine which I started in 1998 (third and last official issue was released in 1999), creating it with HTML and a little bit of JavaScript. It was hosted on EmuM@nia (emumania.com) which was one of the most famous Spanish emulation web sites before it disappeared in 2002. It had different contributors (DaTaR, Erterks, ARROW, [Lolo], CHIP, Scumnok, [[[ALX]]]...) who wrote some sections and/or helped in some way.
 
-Only three issues where released. Fourth issue, which I was doing, was never neither finished nor released but the last version I could find is included in this package.
+Only three issues where released (all using Spanish as the main language). Fourth issue, which I was doing, was never neither finished nor released but the last version I could find is included in this package.
 
 First three issues contained sections about software, emulation (including another older e-zine called Emu Mania by DaTaR), games, pastimes, programming (with a C course), hacking and cracking, music, web design course (by Erterks), contests (games contest, animations contest, images contest, music contests, homepages contest), a puzzle story made by different contributors which was updated in every issue, news, interviews, links, chat, guestbook, etc.
 
