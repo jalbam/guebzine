@@ -22,3 +22,7 @@ First three issues contained sections about software, emulation (including anoth
 The fourth version was going to contain many more things, as for example sections about IRC, ICQ, body piercing and tattoos, Pokémon, humour, patchwork, Star Wars, Macintosh, Amiga, overclocking, abandonware, retrocomputing, retrogaming (with an article by Scumnok), parapsychology, ASCII art, poems, sayings and proverbs, TV and radio, infographics, 3D, ecology, drugs, rankings, art gallery, point-and-click adventures, interactive fiction, game mods and maps, gastronomy and recipes, mobile phones and GSM, Visual Basic course (by CHIP), JavaScript course (by [Lolo]), Java applets development, underground culture and many many more.
 
 This repository also contains installers and launchers (one of them was made by CHIP) and different versions of the official website where people could download this webzine.
+
+Found on Internet Archive (Archive.org):
+http://web.archive.org/web/20010604023337/http://emumania.com:80/guebzine/
+http://web.archive.org/web/20010818152248/http://emumania.com:80/guebzine/
